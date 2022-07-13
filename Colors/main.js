@@ -61,8 +61,7 @@ function main(){
 				if (lives < 1){
 					console.log(`Game Over\nCorrect answer`, answer, `Your score is:`, score);					
 					lifeCount.textContent = '0';
-					window.close();
-					window.open("http://10.0.0.101");
+					window.open("http://10.0.0.101", "_self");
 				} else {
 					console.log(`Lives remaining:`, lives, `\nCorrect answer:`, answer);
 					main();
