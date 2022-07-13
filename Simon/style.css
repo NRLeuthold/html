@@ -1,0 +1,280 @@
+html {
+    background: black;
+}
+
+body {
+    width: 100vh;
+    height: 100vh;
+}
+
+#board {
+    position: absolute;
+    width: 75%;
+    height: 85%;
+    top: 8.5%;
+    left: 12.5%;
+    background-color: gray;
+}
+
+#scoreboard {
+    position: absolute;
+    width: 15%;
+    height: 17.5%;
+    top: 5%;
+    left: 3%;
+
+    background-color: lightgray;
+
+    text-align: center;
+    font-size: 150%;
+	line-height: 150%;
+
+    font-weight: bold;
+}
+
+#scoreCount {
+    line-height: 0;
+    font-weight: normal;
+}
+
+#start {
+    position: absolute;
+    width: 15%;
+    height: 8%;
+    top: 27.5%;
+    left: 3%;
+
+    background-color: lightgray;
+
+    text-align: center;
+    font-size: 150%;
+	line-height: 150%;
+
+    font-weight: bold;
+}
+
+#start:hover {
+    background-color: lightgreen;
+}
+
+#start:active{
+    background-color: rgb(98, 161, 98);
+}
+
+#reset {
+    position: absolute;
+    width: 15%;
+    height: 8%;
+    top: 37.5%;
+    left: 3%;
+
+    background-color: lightgray;
+
+    text-align: center;
+    font-size: 150%;
+	line-height: 150%;
+
+    font-weight: bold;
+}
+
+#reset:hover {
+    background-color: lightcoral;
+}
+
+#reset:active{
+    background-color: rgb(202, 99, 99);
+}
+
+#rules{
+    position: absolute;
+    width: 15%;
+    height: 45%;
+    top: 50%;
+    left: 3%;
+
+    background-color: lightgray;
+
+    text-align: center;
+    font-size: 90%;
+	line-height: 95%;
+
+}
+
+#rulesTitle{
+    font-size: 125%;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#goodluck{
+    font-size: 112.5%;
+    font-weight: bold;
+}
+
+#game{
+    position: absolute;
+    width: 76%;
+    height: 90%;
+    top: 5%;
+    left: 21%;
+
+    background-color: lightgray;
+}
+
+#blackCircle {
+    position: absolute;
+    border-radius: 50%;
+
+    background-color: black;
+}
+
+#centerCircle {
+    position: absolute;
+    border-radius: 50%;
+
+    background-color: gray;
+}
+
+#indicator {
+    position: absolute;
+    border-radius: 50%;
+
+    background-color: rgb(34, 34, 34);
+}
+
+
+
+
+
+#yellow {
+    stroke: darkgray;
+    fill: yellow;
+}
+
+#yellow:hover {
+    fill: darkgoldenrod;
+}
+
+#yellow:active {
+    fill: black;
+}
+
+
+
+
+#blue {
+    stroke: darkgray;
+    fill: blue;
+}
+
+#blue:hover {
+    fill: darkblue;
+}
+
+#blue:active {
+    fill: black;
+}
+
+
+
+
+#green {
+    stroke: darkgray;
+    fill: green;
+}
+
+#green:hover {
+    fill: darkgreen;
+}
+
+#green:active {
+    fill: black;
+}
+
+
+
+
+#red {
+    stroke: darkgray;
+    fill: red;
+}
+
+#red:hover {
+    fill: darkred;
+}
+
+#red:active {
+    fill: black;
+}
+
+
+#endMenu {
+    position: absolute;
+    width: 85%;
+    height: 70%;
+    
+    background-color: darkgray;
+
+    display: none;
+}
+
+#endMenuContent {
+    position: absolute;
+    width: 55%;
+    height: 35%;
+    
+    background-color: lightgray;
+}
+
+#gameOver {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 250%;
+}
+
+#finalScore {
+    text-align: center;
+    font-weight: bold;
+    font-size: 175%;
+    line-height: 50%;
+}
+
+#finalScoreCount {
+    text-align: center;
+    font-weight: bold;
+    font-size: 175%;
+    line-height: 50%;
+}
+
+#finalRestart {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+
+    background-color: lightgray;
+}
+
+#finalRestart:hover {
+    background-color: lightgreen;
+}
+
+#finalRestart:active {
+    background-color: rgb(98, 161, 98);
+}
+
+
+#returnHome {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+
+    background-color: lightgray;
+}
+
+#returnHome:hover {
+    background-color: lightcoral;
+}
+
+#returnHome:active {
+    background-color: rgb(202, 99, 99);
+}

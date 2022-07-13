@@ -1,0 +1,11 @@
+.center {
+	margin: auto;
+	width: 50%;
+	border: 3px solid;
+	padding: 10px;
+}
+
+#game {
+	font-weight: bold;
+}
+
