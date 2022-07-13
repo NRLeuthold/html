@@ -30,11 +30,28 @@ function play() {
         checkWin();
     });
 
+    yellow.addEventListener('mouseover', () => {
+        yellow.style.fill = "darkgoldenrod";
+    })
+
+    yellow.addEventListener('mouseout', () => {
+        yellow.style.fill = "yellow";
+    })
+
     blue.addEventListener('click', () => {
         if (!running) return;
         selected.push("blue");
         checkWin();
     });
+
+    blue.addEventListener('mouseover', () => {
+        blue.style.fill = "darkblue";
+    })
+
+    blue.addEventListener('mouseout', () => {
+        blue.style.fill = "blue";
+    })
+
 
     green.addEventListener('click', () => {
         if (!running) return;
@@ -42,11 +59,28 @@ function play() {
         checkWin();
     });
 
+    green.addEventListener('mouseover', () => {
+        green.style.fill = "darkgreen";
+    })
+
+    green.addEventListener('mouseout', () => {
+        green.style.fill = "green";
+    })
+
     red.addEventListener('click', () => {
         if (!running) return;
         selected.push("red");
         checkWin();
     });
+
+    red.addEventListener('mouseover', () => {
+        red.style.fill = "darkred";
+    })
+
+    red.addEventListener('mouseout', () => {
+        red.style.fill = "red";
+    })
+
 }
 
 function randColor(){
