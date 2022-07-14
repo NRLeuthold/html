@@ -1,3 +1,7 @@
+html {
+	background-color: black;
+}
+
 #header {
 	position: fixed;
 	width: 80%;
