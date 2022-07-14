@@ -4,6 +4,8 @@ var titleSTYLE = getComputedStyle(title);
 const colorGame = document.getElementById("colorGame");
 var colorGameSTYLE = getComputedStyle(colorGame);
 
+const colorGameExplain = document.getElementById("colorGameExplain");
+var colorGameExplainSTYLE = getComputedStyle(colorGameExplain);
 
 function alignGamePage() {
     titleSTYLE = getComputedStyle(title);
@@ -11,6 +13,9 @@ function alignGamePage() {
 
     colorGameSTYLE = getComputedStyle(colorGame);
     colorGame.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(colorGameSTYLE.width))/2 + 'px';
+
+    colorGameExplainSTYLE = getComputedStyle(colorGameExplain);
+    colorGameExplain.left = parseInt(colorGameSTYLE.width) - parseInt(colorGameExplainSTYLE.width) - 10 + "px";
 }
 
 var refresh = setInterval(function(){
