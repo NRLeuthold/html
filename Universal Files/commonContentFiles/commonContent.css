@@ -5,3 +5,13 @@ html {
 body {
     overflow: hidden;
 }
+
+
+#mainContent {
+	position: absolute;
+	width: 75%;
+	height: 10000px;
+	top: 0;
+
+	background-color: yellow;
+}

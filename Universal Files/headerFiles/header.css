@@ -68,20 +68,3 @@
 #game {
 	font-weight: bold;
 }
-
-#mainContent {
-	position: absolute;
-	width: 75%;
-	height: 10000px;
-	top: 0;
-
-	background-color: yellow;
-}
-
-#playgame {
-	position: absolute;
-	width: 25%;
-	height: 10%;
-
-	background: black;
-}
