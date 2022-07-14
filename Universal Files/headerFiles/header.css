@@ -25,7 +25,7 @@
 #homePage {
 	position: absolute;
 	width: 15vw;
-	height: 10vh;
+	height: 65%;
 	top: 15%;
 	left: 35%;
 	
@@ -43,7 +43,7 @@
 #gamePage {
 	position: absolute;
 	width: 15vw;
-	height: 10vh;
+	height: 65%;
 	top: 15%;
 	left: 60%;
 	
