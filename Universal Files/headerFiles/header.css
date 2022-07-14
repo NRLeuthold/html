@@ -33,11 +33,11 @@
 }
 
 #homePage:hover {
-	background-color: rgb(7, 80, 7);
+	background-color: rgb(160, 196, 200);
 }
 
 #homePage:active {
-	background-color: rgb(15, 50, 15);
+	background-color: rgb(140, 176, 180);
 }
 
 #gamePage {
@@ -51,11 +51,11 @@
 }
 
 #gamePage:hover {
-	background-color: rgb(7, 80, 7);
+	background-color: rgb(160, 196, 200);
 }
 
 #gamePage:active {
-	background-color: rgb(15, 50, 15);
+	background-color: rgb(140, 176, 180);
 }
 
 
