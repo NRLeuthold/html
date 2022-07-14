@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simon Game</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="board">
+            <div id="scoreboard">
+                Score:
+                <br>
+                <p id="scoreCount">0</p>
+            </div>
+
+            <button id="start">START</button>
+            <button id="reset">RESET</button>
+
+            <div id="rules">
+                <p id="rulesTitle">Rules</p>
+                The rules are simple, memorize the pattern shown and repeat it. Every round, the pattern gets longer. If you mess up even once, the game ends.
+                <p id="goodluck">Good luck!</p>
+            </div>
+
+            <div id="game">
+
+
+                <div id="blackCircle">
+                    <div id="centerCircle">
+                        <div id="indicator"></div>
+                    </div>
+
+
+                    <svg width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+                        <path id="yellow" d="
+                        M 5 47.5 
+                        Q 10 10, 47.5 5 
+                        v 22.5
+                        Q 30 30, 27.5 47.5
+                        Z
+                        " 
+                        />
+
+                        <path id="blue" d="
+                        M 52.5 5 
+                        Q 90 10, 95 47.5 
+                        h -22.5
+                        Q 70 30, 52.5 27.5
+                        Z
+                        " 
+                        />
+
+                        <path id="green" d="
+                        M 95 52.5 
+                        Q 90 90, 52.5 95 
+                        v -22.5
+                        Q 70 70, 72.5 52.5
+                        Z
+                        " 
+                        />
+
+                        <path id="red" d="
+                        M 47.5 95 
+                        Q 10 90, 5 52.5 
+                        h 22.5
+                        Q 30 70, 47.5 72.5
+                        Z
+                        " 
+                        />
+                    </svg>
+
+
+
+
+                </div>
+
+                <div id="endMenu">
+                    <p id="gameOver">Game Over</p>
+
+                    <div id="endMenuContent">
+                        <p id="finalScore">
+                            Score: <p id="finalScoreCount"></p>
+                        </p>
+                    </div>
+
+                    <button id="finalRestart">RESTART</button>
+                    <button id="returnHome">RETURN TO HOME</button>
+                </div>
+            
+            </div>
+
+        </div>
+        <script type="text/javascript" src="sizing.js"></script>
+        <script type="text/javascript" src="gamePlay.js"></script>
+
+    </body>
+</html>
