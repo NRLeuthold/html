@@ -38,6 +38,17 @@ function play() {
         yellow.style.fill = "yellow";
     })
 
+    yellow.addEventListener('mousedown', () => {
+        yellow.style.fill = "black";
+    })
+
+    yellow.addEventListener('mouseup', () => {
+        yellow.style.fill = "yellow";
+    })
+
+
+
+
     blue.addEventListener('click', () => {
         if (!running) return;
         selected.push("blue");
@@ -51,6 +62,15 @@ function play() {
     blue.addEventListener('mouseout', () => {
         blue.style.fill = "blue";
     })
+    blue.addEventListener('mousedown', () => {
+        blue.style.fill = "black";
+    })
+
+    blue.addEventListener('mouseup', () => {
+        blue.style.fill = "blue";
+    })
+
+
 
 
     green.addEventListener('click', () => {
@@ -67,6 +87,17 @@ function play() {
         green.style.fill = "green";
     })
 
+    green.addEventListener('mousedown', () => {
+        green.style.fill = "black";
+    })
+
+    green.addEventListener('mouseup', () => {
+        green.style.fill = "green";
+    })
+
+
+
+
     red.addEventListener('click', () => {
         if (!running) return;
         selected.push("red");
@@ -78,6 +109,14 @@ function play() {
     })
 
     red.addEventListener('mouseout', () => {
+        red.style.fill = "red";
+    })
+
+    red.addEventListener('mousedown', () => {
+        red.style.fill = "black";
+    })
+
+    red.addEventListener('mouseup', () => {
         red.style.fill = "red";
     })
 
