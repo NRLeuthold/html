@@ -16,8 +16,8 @@ function alignHeader(){
 
     
     buttonsSTYLE = getComputedStyle(buttons);
+    buttons.style.width = (parseInt(headerSTYLE.width)) - (parseInt(logoSTYLE.width)) - (parseInt(headerSTYLE.width * .1)) + "px";
     buttons.style.left = (parseInt(logoSTYLE.width)) + (parseInt(headerSTYLE.width * .1)) + "px";
-    buttons.style.width = (parseInt(headerSTYLE.width)) - (parseInt(logoSTYLE.width)) - (parseInt(headerSTYLE.width * .1))
 }
 
 var refresh = setInterval(function(){
