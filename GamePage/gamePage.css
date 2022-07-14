@@ -1,8 +1,8 @@
-#colorGame {
+#title {
     position: absolute;
     width: 85%;
     height: 100px;
-    top: 400px;
+    top: 150px;
 
     background-color: white;
 }
