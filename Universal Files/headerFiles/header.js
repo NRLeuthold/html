@@ -6,7 +6,6 @@ function alignHeader(){
     var logoSTYLE = getComputedStyle(logo);
 
     header.style.left = (window.innerWidth/2) - (parseInt(headerSTYLE.width)/2) + "px";
-
     logo.style.left = (parseInt(headerSTYLE.height)-(parseInt(logoSTYLE.height)))/2 + "px";
 
 }
