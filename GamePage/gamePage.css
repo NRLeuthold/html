@@ -40,5 +40,6 @@
 #colorGameTitle{
     text-align: center;
     font-weight: bolder;
-    font-size: 50px;
+    font-size: 35px;
+    line-height: 0%;
 }
