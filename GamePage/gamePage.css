@@ -49,3 +49,12 @@
     padding: 10px;
     text-align: center;
 }
+
+#colorGameButton {
+    position: absolute;
+    width: 20%;
+    height: 20%;
+    top: 85%;
+
+    background-color: lightblue;
+}
