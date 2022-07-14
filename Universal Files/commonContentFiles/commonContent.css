@@ -13,4 +13,6 @@ body {
 	top: 0;
 
 	background-color: yellow;
+
+    overflow-y: scroll;
 }
