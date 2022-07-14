@@ -2,10 +2,6 @@ html {
 	background-color: black;
 }
 
-body {
-    overflow: hidden;
-}
-
 #mainContent {
 	position: absolute;
 	width: 75%;
@@ -13,6 +9,4 @@ body {
 	top: 0;
 
 	background-color: yellow;
-
-    overflow-y: scroll;
 }
