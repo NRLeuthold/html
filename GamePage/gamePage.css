@@ -46,4 +46,6 @@
 
 #colorGameExplanation {
     font-size: medium;
+    padding: 10px;
+    text-align: center;
 }
