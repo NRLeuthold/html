@@ -79,7 +79,6 @@
 #simonImg {
     position: absolute;
     top: 10px;
-    left: 10px;
     width: 337.346938776px;
     height: 190px;
 }
@@ -87,6 +86,7 @@
 #simonGameExplain {
     position: absolute;
     top: 10px;
+    left: 10px;
     width: 400px;
     height: 190px;
 
