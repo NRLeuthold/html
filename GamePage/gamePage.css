@@ -37,9 +37,13 @@
     background-color: lightgray;
 }
 
-#colorGameTitle{
+#colorGameTitle {
     text-align: center;
     font-weight: bolder;
     font-size: 35px;
     line-height: 0%;
+}
+
+#colorGameExplanation {
+    font-size: medium;
 }
