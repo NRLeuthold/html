@@ -10,6 +10,9 @@ var colorImgSTYLE = getComputedStyle(colorImg);
 const colorGameExplain = document.getElementById("colorGameExplain");
 var colorGameExplainSTYLE = getComputedStyle(colorGameExplain);
 
+const colorGameButton = document.getElementById("colorGameButton");
+var colorGameButtonSTYLE = getComputedStyle(colorGameButton);
+
 function alignGamePage() {
     titleSTYLE = getComputedStyle(title);
     title.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(titleSTYLE.width))/2 + 'px';
@@ -20,6 +23,9 @@ function alignGamePage() {
     colorGameExplainSTYLE = getComputedStyle(colorGameExplain);
     colorGameExplain.style.width = parseInt(colorGameSTYLE.width) - (parseInt(colorImgSTYLE.width) + 30) + "px";
     colorGameExplain.style.left = parseInt(colorGameSTYLE.width) - parseInt(colorGameExplainSTYLE.width) - 10 + "px";
+
+    colorGameButtonSTYLE = getComputedStyle(colorGameButton);
+    colorGameButton.style.left = (parseInt(colorGameExplainSTYLE.width)/2) - (parseInt(colorGameButtonSTYLE)/2) + "px";
 }
 
 var refresh = setInterval(function(){
