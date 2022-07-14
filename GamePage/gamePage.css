@@ -10,3 +10,12 @@
     text-align: center;
     line-height: 125%;
 }
+
+#colorGame {
+    position: absolute;
+    width: 85%;
+    height: 150px;
+    top: 200px;
+
+    background-color: white;
+}
