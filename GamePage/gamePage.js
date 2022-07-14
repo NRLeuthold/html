@@ -15,7 +15,7 @@ function alignGamePage() {
     colorGame.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(colorGameSTYLE.width))/2 + 'px';
 
     colorGameExplainSTYLE = getComputedStyle(colorGameExplain);
-    colorGameExplain.left = parseInt(colorGameSTYLE.width) - parseInt(colorGameExplainSTYLE.width) - 10 + "px";
+    colorGameExplain.style.left = parseInt(colorGameSTYLE.width) - parseInt(colorGameExplainSTYLE.width) - 10 + "px";
 }
 
 var refresh = setInterval(function(){
