@@ -66,3 +66,59 @@
 #colorGameButton:active {
     background-color: rgb(36, 71, 83);
 }
+
+#simonGame {
+    position: absolute;
+    width: 85%;
+    height: 210px;
+    top: 600px;
+
+    background-color: white;
+}
+
+#simonImg {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 337.346938776px;
+    height: 190px;
+}
+
+#simonGameExplain {
+    position: absolute;
+    top: 10px;
+    width: 400px;
+    height: 190px;
+
+    background-color: lightgray;
+}
+
+#simonGameTitle {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 35px;
+    line-height: 0%;
+}
+
+#simonGameExplanation {
+    font-size: medium;
+    padding: 10px;
+    text-align: center;
+}
+
+#simonGameButton {
+    position: absolute;
+    width: 40%;
+    height: 20%;
+    top: 75%;
+
+    background-color: lightblue;
+}
+
+#simonGameButton:hover {
+    background-color: rgb(116, 164, 180);
+}
+
+#simonGameButton:active {
+    background-color: rgb(36, 71, 83);
+}

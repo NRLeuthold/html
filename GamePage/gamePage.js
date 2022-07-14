@@ -13,9 +13,24 @@ var colorGameExplainSTYLE = getComputedStyle(colorGameExplain);
 const colorGameButton = document.getElementById("colorGameButton");
 var colorGameButtonSTYLE = getComputedStyle(colorGameButton);
 
+const simonGame = document.getElementById("simonGame");
+var simonGameSTYLE = getComputedStyle(simonGame);
+
+const simonImg = document.getElementById("simonImg");
+var simonImgSTYLE = getComputedStyle(simonImg);
+
+const simonGameExplain = document.getElementById("simonGameExplain");
+var simonGameExplainSTYLE = getComputedStyle(simonGameExplain);
+
+const simonGameButton = document.getElementById("simonGameButton");
+var simonGameButtonSTYLE = getComputedStyle(simonGameButton);
+
+
+
 function alignGamePage() {
     titleSTYLE = getComputedStyle(title);
     title.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(titleSTYLE.width))/2 + 'px';
+
 
     colorGameSTYLE = getComputedStyle(colorGame);
     colorGame.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(colorGameSTYLE.width))/2 + 'px';
@@ -26,7 +41,19 @@ function alignGamePage() {
 
     colorGameButtonSTYLE = getComputedStyle(colorGameButton);
     colorGameButton.style.left = (parseInt(colorGameExplainSTYLE.width) - parseInt(colorGameButtonSTYLE.width))/2 + "px";
+
+    
+    simonGameSTYLE = getComputedStyle(simonGame);
+    simonGame.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(simonGameSTYLE.width))/2 + 'px';
+
+    simonGameExplainSTYLE = getComputedStyle(simonGameExplain);
+    simonGameExplain.style.width = parseInt(simonGameSTYLE.width) - (parseInt(simonImgSTYLE.width) + 30) + "px";
+    simonGameExplain.style.left = parseInt(simonGameSTYLE.width) - parseInt(simonGameExplainSTYLE.width) - 10 + "px";
+
+    simonGameButtonSTYLE = getComputedStyle(simonGameButton);
+    simonGameButton.style.left = (parseInt(simonGameExplainSTYLE.width) - parseInt(simonGameButtonSTYLE.width))/2 + "px";
 }
+
 
 var refresh = setInterval(function(){
     alignGamePage();
