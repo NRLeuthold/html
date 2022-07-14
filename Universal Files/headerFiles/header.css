@@ -1,7 +1,7 @@
 #header {
 	position: fixed;
 	width: 80%;
-	height: 95px;
+	height: 110px;
 	top: 0;
 
 	z-index: 1;
@@ -10,7 +10,7 @@
 
 #logo {
 	position: absolute;
-	height: 85.5px;
+	height: 90%;
 	top: 5%;
 	left: 5%;
 }
