@@ -15,6 +15,13 @@
 	left: 5%;
 }
 
+#buttons {
+	position: absolute;
+	top: 50%;
+	height: 90%;
+}
+
+
 #homePage {
 	position: absolute;
 	width: 15vw;
