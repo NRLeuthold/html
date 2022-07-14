@@ -1,6 +1,6 @@
 #title {
     position: absolute;
-    width: 85%;
+    width: 90%;
     height: 100px;
     top: 150px;
 
@@ -35,4 +35,10 @@
     height: 190px;
 
     background-color: lightgray;
+}
+
+#colorGameTitle{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 50px;
 }
