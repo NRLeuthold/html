@@ -1,63 +1,82 @@
 #header {
-	position: fixed;
-	width: 80%;
-	height: 130px;
-	top: 0;
+    position: fixed;
+    width: 80%;
+    height: 130px;
+    top: 0;
 
-	z-index: 1;
-	background-color: lightgray;
+    z-index: 1;
+    background-color: lightgray;
 }
 
 #logo {
-	position: absolute;
-	height: 90%;
-	top: 5%;
-	left: 5%;
+    position: absolute;
+    height: 90%;
+    top: 5%;
+    left: 5%;
 }
 
 #homePage {
-	position: absolute;
-	width: 15vw;
-	height: 65%;
-	top: 15%;
-	left: 35%;
-	
-	background-color: rgb(180, 216, 220);
+    position: absolute;
+    width: 15vw;
+    height: 65%;
+    top: 15%;
+    left: 35%;
+
+    background-color: rgb(180, 216, 220);
 }
 
 #homePage:hover {
-	background-color: rgb(160, 196, 200);
+    background-color: rgb(160, 196, 200);
 }
 
 #homePage:active {
-	background-color: rgb(140, 176, 180);
+    background-color: rgb(140, 176, 180);
 }
 
 #gamePage {
-	position: absolute;
-	width: 15vw;
-	height: 65%;
-	top: 15%;
-	left: 60%;
-	
-	background-color: rgb(180, 216, 220);
+    position: absolute;
+    width: 15vw;
+    height: 65%;
+    top: 15%;
+    left: 60%;
+
+    background-color: rgb(180, 216, 220);
 }
 
 #gamePage:hover {
-	background-color: rgb(160, 196, 200);
+    background-color: rgb(160, 196, 200);
 }
 
 #gamePage:active {
-	background-color: rgb(140, 176, 180);
+    background-color: rgb(140, 176, 180);
+}
+
+
+#APIPage {
+	position: absolute;
+    width: 15vw;
+    height: 65%;
+    top: 15%;
+    left: 85%;
+
+    background-color: rgb(180, 216, 220);
+}
+
+#APIPage:hover {
+    background-color: rgb(160, 196, 200);
+}
+
+#APIPage:active {
+    background-color: rgb(140, 176, 180);
 }
 
 
 .center {
-	width: 50%;
-	border: 3px solid;
-	z-index: 1000;
+    width: 50%;
+    border: 3px solid;
+    z-index: 1000;
 }
 
 #game {
-	font-weight: bold;
+    font-weight: bold;
 }
