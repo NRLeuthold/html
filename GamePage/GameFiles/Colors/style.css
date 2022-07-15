@@ -13,8 +13,6 @@ body {
 	
 }
 
-.blank {}
-
 #choice1 {
     top:32.5%;
     left: 14%;
@@ -108,4 +106,111 @@ body {
 	text-align: center;
 	font-size: 150%;
 	line-height: 200%;
+}
+
+#returnHome {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 10%;
+	left:  25%;
+
+	background-color: lightblue;
+}
+
+#returnHome:hover {
+	background-color: rgb(116, 164, 180);
+}
+
+#returnHome:active {
+	background-color: rgb(36, 71, 83);
+}
+
+#returnGamePage {
+	position: absolute;
+	width: 10%;
+	height: 10%;
+	top: 10%;
+	left:  65%;
+
+	background-color: lightblue;
+}
+
+#returnGamePage:hover {
+	background-color: rgb(116, 164, 180);
+}
+
+#returnGamePage:active {
+	background-color: rgb(36, 71, 83);
+}
+
+#endMenu {
+    position: absolute;
+    width: 85%;
+    height: 70%;
+    
+    background-color: darkgray;
+
+    display: none;
+}
+
+#endMenuContent {
+    position: absolute;
+    width: 55%;
+    height: 35%;
+    
+    background-color: lightgray;
+}
+
+#gameOver {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 250%;
+}
+
+#finalScore {
+    text-align: center;
+    font-weight: bold;
+    font-size: 175%;
+    line-height: 50%;
+}
+
+#finalScoreCount {
+    text-align: center;
+    font-weight: bold;
+    font-size: 175%;
+    line-height: 50%;
+}
+
+#finalRestart {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+
+    background-color: lightgray;
+}
+
+#finalRestart:hover {
+    background-color: lightgreen;
+}
+
+#finalRestart:active {
+    background-color: rgb(98, 161, 98);
+}
+
+
+#finalReturnHome {
+    position: absolute;
+    width: 30%;
+    height: 20%;
+
+    background-color: lightgray;
+}
+
+#finalReturnHome:hover {
+    background-color: lightcoral;
+}
+
+#finalReturnHome:active {
+    background-color: rgb(202, 99, 99);
 }
