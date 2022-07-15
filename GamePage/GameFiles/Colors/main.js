@@ -16,7 +16,6 @@ const finalRestart = document.getElementById("finalRestart");
 const finalReturnHome = document.getElementById("finalReturnHome");
 const finalScoreCount = document.getElementById("finalScoreCount");
 
-
 var score = 0;
 var lives = 3;
 
