@@ -24,19 +24,33 @@ var refresh = setInterval(function () {
     alignAPIPage();
 }, 0.1);
 
-/*
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
 const Http = new XMLHttpRequest();
 
 const url = "https://passwordwolf.com/api";
 Http.open("GET", url);
+
+request.onload = function () {
+    var data = JSON.parse(this.response);
+
+    if (request.status >= 200 && request.status < 400) {
+        data.forEach((item) => {
+            console.log(item);
+        });
+    } else {
+        console.log("error");
+    }
+};
+
 Http.send();
 
 Http.onreadystatechange = (e) => {
     APIOutput.textContent = Http.responseText;
 };
-*/
 
+
+
+/*
 var request = new XMLHttpRequest();
 
 request.open("GET", "https://ghibliapi.herokuapp.com/films", true);
@@ -54,3 +68,4 @@ request.onload = function () {
 };
 
 request.send();
+*/
