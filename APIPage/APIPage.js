@@ -4,6 +4,8 @@ var titleSTYLE = getComputedStyle(title);
 const passwordAPI = document.getElementById("passwordAPI");
 var passwordAPISTYLE = getComputedStyle(passwordAPI);
 
+const APIOutput = document.getElementById("APIOutput");
+var APIOutputSTYLE = getComputedStyle(APIOutput);
 
 function alignAPIPage(){
     
@@ -19,9 +21,6 @@ var refresh = setInterval(function(){
 }, .1);
 
 
-
-
-/*
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 const Http = new XMLHttpRequest();
 
@@ -30,6 +29,5 @@ Http.open("GET", url);
 Http.send();
 
 Http.onreadystatechange = (e) => {
-    console.log(Http.responseText);
+    APIOutput.textContent = Http.responseText;
 };
-*/
