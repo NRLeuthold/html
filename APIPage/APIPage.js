@@ -1,5 +1,3 @@
-
-
 const title = document.getElementById("title");
 var titleSTYLE = getComputedStyle(title);
 
@@ -9,18 +7,22 @@ var passwordAPISTYLE = getComputedStyle(passwordAPI);
 const APIOutput = document.getElementById("APIOutput");
 var APIOutputSTYLE = getComputedStyle(APIOutput);
 
-function alignAPIPage(){
-    
+function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
-    title.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(titleSTYLE.width))/2 + 'px';
+    title.style.left =
+        (parseInt(mainContentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
+        "px";
 
     passwordAPISTYLE = getComputedStyle(passwordAPI);
-    passwordAPI.style.left = ((parseInt(mainContentSTYLE.width)) - parseInt(passwordAPISTYLE.width))/2 + 'px';
+    passwordAPI.style.left =
+        (parseInt(mainContentSTYLE.width) - parseInt(passwordAPISTYLE.width)) /
+            2 +
+        "px";
 }
 
-var refresh = setInterval(function(){
+var refresh = setInterval(function () {
     alignAPIPage();
-}, .1);
+}, 0.1);
 
 /*
 const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
@@ -34,3 +36,21 @@ Http.onreadystatechange = (e) => {
     APIOutput.textContent = Http.responseText;
 };
 */
+
+var request = new XMLHttpRequest();
+
+request.open("GET", "https://ghibliapi.herokuapp.com/films", true);
+request.onload = function () {
+    // Begin accessing JSON data here
+    var data = JSON.parse(this.response);
+
+    if (request.status >= 200 && request.status < 400) {
+        data.forEach((movie) => {
+            console.log(movie.title);
+        });
+    } else {
+        console.log("error");
+    }
+};
+
+request.send();
