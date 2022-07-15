@@ -1,5 +1,4 @@
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-const Http = new XMLHttpRequest();
+
 
 const title = document.getElementById("title");
 var titleSTYLE = getComputedStyle(title);
@@ -23,6 +22,10 @@ var refresh = setInterval(function(){
     alignAPIPage();
 }, .1);
 
+/*
+const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const Http = new XMLHttpRequest();
+
 const url = "https://passwordwolf.com/api";
 Http.open("GET", url);
 Http.send();
@@ -30,3 +33,4 @@ Http.send();
 Http.onreadystatechange = (e) => {
     APIOutput.textContent = Http.responseText;
 };
+*/
