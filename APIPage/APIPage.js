@@ -30,10 +30,10 @@ const Http = new XMLHttpRequest();
 const url = "https://passwordwolf.com/api";
 Http.open("GET", url);
 
-request.onload = function () {
+Http.onload = function () {
     var data = JSON.parse(this.response);
 
-    if (request.status >= 200 && request.status < 400) {
+    if (Http.status >= 200 && Http.status < 400) {
         data.forEach((item) => {
             console.log(item);
         });
