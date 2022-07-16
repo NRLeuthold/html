@@ -49,3 +49,7 @@
 #useNameAPI:active {
     background-color: rgb(140, 176, 180);
 }
+
+#APIOutput {
+    position: absolute;
+}

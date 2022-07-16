@@ -4,9 +4,6 @@ var titleSTYLE = getComputedStyle(title);
 const nameAPI = document.getElementById("nameAPI");
 var nameAPISTYLE = getComputedStyle(nameAPI);
 
-const APIOutput = document.getElementById("APIOutput");
-var APIOutputSTYLE = getComputedStyle(APIOutput);
-
 const nameTitleDIV = document.getElementById("nameTitleDIV");
 var nameTitleDIVSTYLE = getComputedStyle(nameTitleDIV);
 
@@ -15,6 +12,9 @@ var yourNameSTYLE = getComputedStyle(yourName);
 
 const useNameAPI = document.getElementById("useNameAPI");
 var useNameAPISTYLE = getComputedStyle(useNameAPI);
+
+const APIOutput = document.getElementById("APIOutput");
+var APIOutputSTYLE = getComputedStyle(APIOutput);
 
 function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
@@ -36,6 +36,9 @@ function alignAPIPage() {
 
     useNameAPI.style.left = parseInt(nameAPISTYLE.width)/2 - parseFloat(useNameAPISTYLE.width)/2 + "px";
     useNameAPI.style.top = parseInt(yourNameSTYLE.top) + parseInt(yourNameSTYLE.height) + 25 + "px";
+
+    APIOutput.style.left = parseInt(nameAPISTYLE.width)/2 - parseFloat(APIOutputSTYLE.width)/2 + "px";
+    APIOutput.style.top = parseInt(useNameAPISTYLE.top) + parseInt(useNameAPISTYLE.height) + 25 + "px";
 
 }
 
