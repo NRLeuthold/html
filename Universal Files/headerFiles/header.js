@@ -35,7 +35,7 @@ function alignHeader(){
 
     
     var buttonAreaWidth = ((parseFloat(headerSTYLE.width) - logoAreaWidth));
-    var buttonSpacing = ((headerButtonsSTYLE.width - ((parseInt(homePageSTYLE.width))*3)) / 3);
+    var buttonSpacing = ((parseFloat(headerButtonsSTYLE.width) - ((parseInt(homePageSTYLE.width))*3)) / 3);
 
     //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
     //homePage.style.left = ((parseFloat(headerSTYLE.width) + (parseFloat(logoSTYLE.width) + parseFloat(logoSTYLE.left) - (parseFloat(homePageSTYLE.width) + parseFloat(gamePageSTYLE.width) + parseFloat(APIPageSTYLE.width)))))/3 + "px";
