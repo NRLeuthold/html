@@ -25,7 +25,8 @@ function alignHeader(){
     gamePageSTYLE = getComputedStyle(gamePage);
     APIPageSTYLE = getComputedStyle(APIPage);
 
-    homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
+    //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
+    homePage.style.left = ((parseFloat(headerSTYLE.width) - (parseFloat(homePageSTYLE.width) + parseFloat(gamePageSTYLE.width) + parseFloat(APIPageSTYLE.width))))/3 + "px";
     gamePage.style.left = parseInt(homePageSTYLE.left) + parseInt(homePageSTYLE.width) + (parseInt(logoSTYLE.left)) + "px";
     APIPage.style.right = parseFloat(logoSTYLE.left) + "px";
 
