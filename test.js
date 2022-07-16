@@ -1,6 +1,7 @@
 var request = new XMLHttpRequest();
+var url = "https://[asswordwolf.com/api/"
 
-request.open("GET", "https://spotify.com", true);
+request.open("GET", url);
 
 request.onload = function () {
     var data = JSON.parse(this.response);
