@@ -10,6 +10,9 @@ var APIOutputSTYLE = getComputedStyle(APIOutput);
 const nameTitleDIV = document.getElementById("nameTitleDIV");
 var nameTitleDIVSTYLE = getComputedStyle(nameTitleDIV);
 
+const yourName = document.getElementById("yourName");
+var yourNameSTYLE = getComputedStyle(yourName);
+
 function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
     title.style.left =
@@ -23,6 +26,8 @@ function alignAPIPage() {
         "px";
 
     nameTitleDIV.style.left = parseFloat(nameAPISTYLE.width)/2 - parseInt(nameTitleDIVSTYLE.width)/2 + "px";
+    yourName.style.left = parseFloat(yourNameSTYLE.width)/2 - parseInt(nameTitleDIVSTYLE.width)/2 + "px";
+
 }
 
 var refresh = setInterval(function () {
