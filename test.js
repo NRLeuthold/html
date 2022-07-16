@@ -1,4 +1,4 @@
-var apiUrl = "https://pokeapi.co/api/v2/pokemon/ditto/";
+var apiUrl = "https://github.com/";
 fetch(apiUrl)
     .then((response) => {
         return response.json();
