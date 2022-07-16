@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-var url = "https://passwordwolf.com/api/"
+var url = "https://spotify.com/"
 
 request.open("GET", url);
 
