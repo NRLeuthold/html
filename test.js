@@ -9,7 +9,7 @@ request.onload = function () {
     data.forEach((movie) => {
         movies.push(movie.title);
     });
+    APIOutput.textContent = movies;
 };
 
 request.send();
-APIOutput.textContent = movies;
