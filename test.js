@@ -1,5 +1,5 @@
 var ageUrl = "https://api.agify.io?name=noah";
-var genderUrl = "https://api.genderize.io?name=scott";
+var genderUrl = "https://api.genderize.io?name=noah";
 fetch(ageUrl)
     .then((response) => {
         return response.json();
