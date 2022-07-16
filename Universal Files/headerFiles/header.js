@@ -45,8 +45,10 @@ function alignHeader(){
     //gamePage.style.left = parseInt(homePageSTYLE.left) + parseFloat(homePageSTYLE.width) + buttonSpacing + "px";
     //APIPage.style.left = parseInt(gamePageSTYLE.left) + parseFloat(homePageSTYLE.width) + buttonSpacing +"px"
 
-    console.log(buttonSpacing);
-    homePage.style.left = buttonSpacing*2 + "px";
+    //console.log(buttonSpacing);
+    homePage.style.left = buttonSpacing + "px";
+    gamePage.style.left = buttonSpacing*2 + parseFloat(homePageSTYLE.width) + "px";
+    APIPage.style.left = buttonSpacing*3 + parseFloat(gamePageSTYLE.width)*2 + "px";
 
 }
 
