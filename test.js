@@ -3,7 +3,7 @@ var url = "https://spotify.com/"
 
 request.open("GET", url);
 
-request.onreadystatechange = function () {
+request.onload = function () {
     var data = JSON.parse(this.response);
     var movies = [];
 
