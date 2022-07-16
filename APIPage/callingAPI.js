@@ -14,7 +14,7 @@ fetch(ageUrl)
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data);
+        console.log(data.age);
     })
     .catch((err) => {
         // Do something for an error here
@@ -26,7 +26,7 @@ fetch(genderUrl)
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data);
+        console.log(data.gender);
     })
     .catch((err) => {
         // Do something for an error here
@@ -38,7 +38,7 @@ fetch(nationalityUrl)
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data);
+        console.log(data.country);
     })
     .catch((err) => {
         // Do something for an error here
