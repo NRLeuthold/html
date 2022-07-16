@@ -26,9 +26,10 @@ function alignAPIPage() {
         "px";
 
     nameTitleDIV.style.left = parseFloat(nameAPISTYLE.width)/2 - parseInt(nameTitleDIVSTYLE.width)/2 + "px";
+    nameTitleDIV.style.top = 0 + "px";
 
     yourName.style.left = parseInt(nameAPISTYLE.width)/2 - parseFloat(yourNameSTYLE.width)/2 + "px";
-    yourName.style.top = parseInt(nameTitleDIVSTYLE.height) + 5 + "px";
+    yourName.style.top = parseInt(nameTitleDIVSTYLE.height) + "px";
 
 }
 
