@@ -21,11 +21,11 @@ function alignHeader(){
     logoSTYLE = getComputedStyle(logo);
     logo.style.left = (parseInt(headerSTYLE.height)-(parseInt(logoSTYLE.height)))/2 + "px";
 
-    homePageSTYLE = get(homePage);
-    gamePageSTYLE = get(gamePage);
-    APIPageSTYLE = get(APIPage);
+    homePageSTYLE = getComputedStyle(homePage);
+    gamePageSTYLE = getComputedStyle(gamePage);
+    APIPageSTYLE = getComputedStyle(APIPage);
 
-    //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
+    homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
 
 }
 
