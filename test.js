@@ -28,7 +28,7 @@ request.onload = function () {
 
 request.send();
 
-
+testing
 
 //This script pulls the names from the url and adds them to an array and then puts them on the screen on APIPage
 // TODO: Find an API that meets CORS standards
