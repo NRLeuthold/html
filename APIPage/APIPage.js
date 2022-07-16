@@ -13,9 +13,9 @@ function alignAPIPage() {
         (parseInt(mainContentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
         "px";
 
-    passwordAPISTYLE = getComputedStyle(passwordAPI);
-    passwordAPI.style.left =
-        (parseInt(mainContentSTYLE.width) - parseInt(passwordAPISTYLE.width)) /
+    nameAPISTYLE = getComputedStyle(nameAPI);
+    nameAPI.style.left =
+        (parseInt(mainContentSTYLE.width) - parseInt(nameAPISTYLE.width)) /
             2 +
         "px";
 }
