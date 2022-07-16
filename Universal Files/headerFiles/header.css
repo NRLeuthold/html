@@ -17,8 +17,8 @@
 
 #headerButtons {
     position: absolute;
-    height: 90%;
-    top: 5%;
+    height: 90px;
+    top: 5px;
 
     background-color: rgb(255, 255, 255);
 }
