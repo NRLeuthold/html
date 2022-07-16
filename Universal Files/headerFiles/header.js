@@ -26,16 +26,17 @@ function alignHeader(){
     APIPageSTYLE = getComputedStyle(APIPage);
 
     var logoAreaWidth = (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2));
-    var buttonAreaWidth = ((parseFloat(headerSTYLE.width) - logoAreaWidth))
+    var buttonAreaWidth = ((parseFloat(headerSTYLE.width) - logoAreaWidth));
+    var buttonSpacing = ((buttonAreaWidth - ((parseInt(homePageSTYLE.width))*3)) / 3);
 
     //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
     //homePage.style.left = ((parseFloat(headerSTYLE.width) + (parseFloat(logoSTYLE.width) + parseFloat(logoSTYLE.left) - (parseFloat(homePageSTYLE.width) + parseFloat(gamePageSTYLE.width) + parseFloat(APIPageSTYLE.width)))))/3 + "px";
     //homePage.style.left = (((parseFloat(headerSTYLE.width) - (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2)))) / 3) + (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2));
     
-    homePage.style.left = ((buttonAreaWidth - ((parseInt(homePageSTYLE.width))*3)) / 3) + logoAreaWidth + "px";
-    gamePage.style.left = parseInt(homePageSTYLE.left) + parseInt(homePageSTYLE.width) + (parseInt(logoSTYLE.left)) + "px";
-    APIPage.style.right = parseFloat(logoSTYLE.left) + "px";
-
+    homePage.style.left = buttonSpacing + logoAreaWidth + "px";
+    gamePage.style.left = parseInt(homePageSTYLE.left) + parseFloat(homePageSTYLE.width) + "px";
+    //APIPage.style.right = parseFloat(logoSTYLE.left) + "px";
+    APIPage.style.left = parseInt(gamePageSTYLE.left) + parseFloat(homePageSTYLE.width) + "px"
     console.log(buttonAreaWidth, homePageSTYLE.left);
 
 }
