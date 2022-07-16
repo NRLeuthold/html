@@ -1,6 +1,6 @@
 var request = new XMLHttpRequest();
 
-request.open("GET", "https://passwordwolf.com", true);
+request.open("GET", "https://spotify.com", true);
 
 request.onload = function () {
     var data = JSON.parse(this.response);
