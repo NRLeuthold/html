@@ -28,7 +28,7 @@ function alignHeader(){
     homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
     gamePage.style.left = parseInt(homePageSTYLE.left) + parseInt(homePageSTYLE.width) + (parseInt(logoSTYLE.left)) + "px";
     APIPage.style.right = parseInt(headerSTYLE.width) - parseInt(logoSTYLE.left);
-    console.log(headerSTYLE.width, logoSTYLE.left, APIPage.style.right);
+    console.log(headerSTYLE.width, logoSTYLE.left, APIPageSTYLE.right);
 
 
 }
