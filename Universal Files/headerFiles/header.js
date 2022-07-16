@@ -31,6 +31,7 @@ function alignHeader(){
     gamePage.style.left = parseInt(homePageSTYLE.left) + parseInt(homePageSTYLE.width) + (parseInt(logoSTYLE.left)) + "px";
     APIPage.style.right = parseFloat(logoSTYLE.left) + "px";
 
+    console.log(homePageSTYLE.left);
 
 }
 
