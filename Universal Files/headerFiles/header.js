@@ -33,7 +33,7 @@ function alignHeader(){
     var buttonSpacing = ((buttonAreaWidth - ((parseInt(homePageSTYLE.width))*3)) / 3);
 
     headerButtons.style.left = logoAreaWidth + "px";
-    headerButtons.style.width = parseFloat(headerSTYLE.width) - logoAreaWidth + "px";
+    headerButtons.style.width = parseFloat(headerSTYLE.width) - logoAreaWidth - parseFloat(logoSTYLE.left) + "px";
     console.log(headerButtonsSTYLE.width);
 
     //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
