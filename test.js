@@ -1,8 +1,14 @@
-function getData() {
-    const response = await fetch('https://ghibliapi.herokuapp.com/films')
-    const data = await response.json()
-    return data;
+// Create a request variable and assign a new XMLHttpRequest object to it.
+var request = new XMLHttpRequest()
+
+// Open a new connection, using the GET request on the URL endpoint
+request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+
+request.onload = function () {
+  // Begin accessing JSON data here
 }
 
-console.log(getData());
-console.log("TESTING");
+// Send request
+request.send()
+
+console.log("Hello");
