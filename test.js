@@ -1,6 +1,7 @@
-const fetch = import('node-fetch');
+function getData() {
+    const response = await fetch('https://ghibliapi.herokuapp.com/films')
+    const data = await response.json()
+    return data;
+}
 
-fetch('https://passwordwolf.com/api')
-    .then(res => res.json())
-    .then(data => console.log(data));
-
+console.log(getData());
