@@ -24,13 +24,15 @@ function alignHeader(){
     homePageSTYLE = getComputedStyle(homePage);
     gamePageSTYLE = getComputedStyle(gamePage);
     APIPageSTYLE = getComputedStyle(APIPage);
-    var buttonAreaWidth = ((parseFloat(headerSTYLE.width) - (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2))))
+
+    var logoAreaWidth = (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2));
+    var buttonAreaWidth = ((parseFloat(headerSTYLE.width) - logoAreaWidth))
 
     //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
     //homePage.style.left = ((parseFloat(headerSTYLE.width) + (parseFloat(logoSTYLE.width) + parseFloat(logoSTYLE.left) - (parseFloat(homePageSTYLE.width) + parseFloat(gamePageSTYLE.width) + parseFloat(APIPageSTYLE.width)))))/3 + "px";
     //homePage.style.left = (((parseFloat(headerSTYLE.width) - (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2)))) / 3) + (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2));
     
-    
+    homePage.style.left = ((buttonAreaWidth - ((parseInt(homePageSTYLE.width))*3)) / 3) + logoAreaWidth;
     gamePage.style.left = parseInt(homePageSTYLE.left) + parseInt(homePageSTYLE.width) + (parseInt(logoSTYLE.left)) + "px";
     APIPage.style.right = parseFloat(logoSTYLE.left) + "px";
 
