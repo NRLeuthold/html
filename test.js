@@ -1,4 +1,4 @@
-var apiUrl = "https://agify.io/";
+var apiUrl = "https://api.agify.io?name=noah";
 fetch(apiUrl)
     .then((response) => {
         return response.json();
