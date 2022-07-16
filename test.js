@@ -1,5 +1,5 @@
 var request = new XMLHttpRequest();
-var url = "https://[asswordwolf.com/api/"
+var url = "https://passwordwolf.com/api/"
 
 request.open("GET", url);
 
@@ -14,6 +14,7 @@ request.onload = function () {
 };
 
 request.send();
+
 
 
 //This script pulls the names from the url and adds them to an array and then puts them on the screen on APIPage
