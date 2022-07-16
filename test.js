@@ -1,4 +1,4 @@
-var apiUrl = "https://passwordwolf.com/";
+var apiUrl = "https://pokeapi.co/api/v2/pokemon/ditto/";
 fetch(apiUrl)
     .then((response) => {
         return response.json();
