@@ -16,10 +16,6 @@ var useNameAPISTYLE = getComputedStyle(useNameAPI);
 const APIOutput = document.getElementById("APIOutput");
 var APIOutputSTYLE = getComputedStyle(APIOutput);
 
-var age = 16;
-var gender = "male";
-var nationality = "US";
-
 function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
     title.style.left =
@@ -64,7 +60,6 @@ function alignAPIPage() {
         "px";
     
     
-    APIOutput.textContent = `AI thinks you are ${age} years old, ${gender}, and from ${nationality}.`;
 }
 
 var refresh = setInterval(function () {
