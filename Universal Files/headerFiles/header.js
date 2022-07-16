@@ -33,11 +33,9 @@ function alignHeader(){
     //homePage.style.left = ((parseFloat(headerSTYLE.width) + (parseFloat(logoSTYLE.width) + parseFloat(logoSTYLE.left) - (parseFloat(homePageSTYLE.width) + parseFloat(gamePageSTYLE.width) + parseFloat(APIPageSTYLE.width)))))/3 + "px";
     //homePage.style.left = (((parseFloat(headerSTYLE.width) - (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2)))) / 3) + (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2));
     
-    homePage.style.left = buttonSpacing + logoAreaWidth + "px";
+    homePage.style.left = (buttonAreaWidth/3) + logoAreaWidth + "px";
     gamePage.style.left = parseInt(homePageSTYLE.left) + parseFloat(homePageSTYLE.width) + buttonSpacing + "px";
-    //APIPage.style.right = parseFloat(logoSTYLE.left) + "px";
     APIPage.style.left = parseInt(gamePageSTYLE.left) + parseFloat(homePageSTYLE.width) + buttonSpacing +"px"
-    console.log(buttonAreaWidth, homePageSTYLE.left);
 
 }
 
