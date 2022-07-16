@@ -34,3 +34,18 @@
 #yourName {
     position: absolute;
 }
+
+#useNameAPI {
+    position: absolute;
+    width: 10%;
+
+    background-color: rgb(180, 216, 220);
+}
+
+#useNameAPI:hover {
+    background-color: rgb(160, 196, 200);
+}
+
+#useNameAPI:active {
+    background-color: rgb(140, 176, 180);
+}
