@@ -19,3 +19,12 @@
 
     background-color: white;
 }
+
+#nameTitle {
+    text-align: center;
+    font-size: 50px;
+}
+
+#yourName {
+    position: absolute;
+}
