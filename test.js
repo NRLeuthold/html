@@ -1,4 +1,4 @@
-import fetch from "/node-fetch";
+import fetch from "http://10.0.0.101/node_modules/node-fetch";
 
 async function getUser() {
     try {
