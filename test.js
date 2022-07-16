@@ -6,6 +6,7 @@ request.onload = function () {};
 
 request.send();
 
+
 var data = JSON.parse(this.response);
 
 data.forEach((movie) => {
