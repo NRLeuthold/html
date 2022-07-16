@@ -1,5 +1,3 @@
-const { get } = require("http");
-
 const header = document.getElementById("header");
 var headerSTYLE = getComputedStyle(header);
 
@@ -27,7 +25,7 @@ function alignHeader(){
     gamePageSTYLE = get(gamePage);
     APIPageSTYLE = get(APIPage);
 
-    homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
+    //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
 
 }
 
