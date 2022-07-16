@@ -1,6 +1,6 @@
-import fetch from "http://10.0.0.101/node_modules/node-fetch";
+const fetch = import('node-fetch');
 
-fetch('https://passwordwolfcom/api')
-    .then(res => res.text())
-    .then(text => console.log(text));
+fetch('https://passwordwolf.com/api')
+    .then(res => res.json())
+    .then(data => console.log(data));
 
