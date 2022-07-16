@@ -6,6 +6,6 @@ if (!response.ok) {
     throw new Error(`Error! status: ${response.status}`);
 }
 
-const result = await response.json();
+const result = response.json();
 console.log(result);
 
