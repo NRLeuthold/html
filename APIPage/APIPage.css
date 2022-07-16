@@ -20,6 +20,10 @@
     background-color: white;
 }
 
+#nameTitleDIV {
+    position: absolute;
+}
+
 #nameTitle {
     text-align: center;
     font-size: 50px;
