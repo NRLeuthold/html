@@ -16,6 +16,10 @@ var useNameAPISTYLE = getComputedStyle(useNameAPI);
 const APIOutput = document.getElementById("APIOutput");
 var APIOutputSTYLE = getComputedStyle(APIOutput);
 
+var age = 16;
+var gender = "male";
+var nationality = "US";
+
 function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
     title.style.left =
@@ -24,22 +28,43 @@ function alignAPIPage() {
 
     nameAPISTYLE = getComputedStyle(nameAPI);
     nameAPI.style.left =
-        (parseInt(mainContentSTYLE.width) - parseInt(nameAPISTYLE.width)) /
-            2 +
+        (parseInt(mainContentSTYLE.width) - parseInt(nameAPISTYLE.width)) / 2 +
         "px";
 
-    nameTitleDIV.style.left = parseFloat(nameAPISTYLE.width)/2 - parseInt(nameTitleDIVSTYLE.width)/2 + "px";
+    nameTitleDIV.style.left =
+        parseFloat(nameAPISTYLE.width) / 2 -
+        parseInt(nameTitleDIVSTYLE.width) / 2 +
+        "px";
     nameTitleDIV.style.top = 0 + "px";
 
-    yourName.style.left = parseInt(nameAPISTYLE.width)/2 - parseFloat(yourNameSTYLE.width)/2 + "px";
+    yourName.style.left =
+        parseInt(nameAPISTYLE.width) / 2 -
+        parseFloat(yourNameSTYLE.width) / 2 +
+        "px";
     yourName.style.top = parseInt(nameTitleDIVSTYLE.height) + "px";
 
-    useNameAPI.style.left = parseInt(nameAPISTYLE.width)/2 - parseFloat(useNameAPISTYLE.width)/2 + "px";
-    useNameAPI.style.top = parseInt(yourNameSTYLE.top) + parseInt(yourNameSTYLE.height) + 25 + "px";
+    useNameAPI.style.left =
+        parseInt(nameAPISTYLE.width) / 2 -
+        parseFloat(useNameAPISTYLE.width) / 2 +
+        "px";
+    useNameAPI.style.top =
+        parseInt(yourNameSTYLE.top) +
+        parseInt(yourNameSTYLE.height) +
+        25 +
+        "px";
 
-    APIOutput.style.left = parseInt(nameAPISTYLE.width)/2 - parseFloat(APIOutputSTYLE.width)/2 + "px";
-    APIOutput.style.top = parseInt(useNameAPISTYLE.top) + parseInt(useNameAPISTYLE.height) + 25 + "px";
-
+    APIOutput.style.left =
+        parseInt(nameAPISTYLE.width) / 2 -
+        parseFloat(APIOutputSTYLE.width) / 2 +
+        "px";
+    APIOutput.style.top =
+        parseInt(useNameAPISTYLE.top) +
+        parseInt(useNameAPISTYLE.height) +
+        25 +
+        "px";
+    
+    
+    APIOutput.textContent = `AI thinks you are ${age} years old, ${gender}, and from ${nationality}.`;
 }
 
 var refresh = setInterval(function () {
