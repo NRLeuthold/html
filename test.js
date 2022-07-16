@@ -3,6 +3,8 @@ var url = "https://passwordwolf.com/api/"
 
 request.open("GET", url);
 
+request.onreadystatechange = someHandler;
+
 request.onload = function () {
     var data = JSON.parse(this.response);
     var movies = [];
