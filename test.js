@@ -5,3 +5,4 @@ function getData() {
 }
 
 console.log(getData());
+console.log("TESTING");
