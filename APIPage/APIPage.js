@@ -1,8 +1,8 @@
 const title = document.getElementById("title");
 var titleSTYLE = getComputedStyle(title);
 
-const passwordAPI = document.getElementById("passwordAPI");
-var passwordAPISTYLE = getComputedStyle(passwordAPI);
+const nameAPI = document.getElementById("nameAPI");
+var nameAPISTYLE = getComputedStyle(nameAPI);
 
 const APIOutput = document.getElementById("APIOutput");
 var APIOutputSTYLE = getComputedStyle(APIOutput);
