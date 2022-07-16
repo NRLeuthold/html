@@ -1,6 +1,8 @@
-var ageUrl = "https://api.agify.io?name=noah";
-var genderUrl = "https://api.genderize.io?name=noah";
-var nationalityUrl = "https://api.nationalize.io?name=noah";
+var name = "noah";
+
+var ageUrl = `https://api.agify.io?name=${name}`;
+var genderUrl = `https://api.genderize.io?name=${name}`;
+var nationalityUrl = `https://api.nationalize.io?name=${name}`;
 fetch(ageUrl)
     .then((response) => {
         return response.json();
