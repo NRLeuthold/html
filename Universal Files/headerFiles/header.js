@@ -19,7 +19,7 @@ function alignHeader(){
     header.style.left = (window.innerWidth/2) - (parseInt(headerSTYLE.width)/2) + "px";
 
     logoSTYLE = getComputedStyle(logo);
-    logo.style.left = (parseInt(headerSTYLE.height)-(parseInt(logoSTYLE.height)))/2 + "px";
+    //logo.style.left = (parseInt(headerSTYLE.height)-(parseInt(logoSTYLE.height)))/2 + "px";
 
     homePageSTYLE = getComputedStyle(homePage);
     gamePageSTYLE = getComputedStyle(gamePage);
