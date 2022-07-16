@@ -5,13 +5,13 @@ const logo = document.getElementById("logo");
 var logoSTYLE = getComputedStyle(logo);
 
 const homePage = document.getElementById("homePage");
-var homePageSTYLE = get(homePage);
+var homePageSTYLE = getComputedStyle(homePage);
 
 const gamePage = document.getElementById("gamePage");
-var gamePageSTYLE = get(gamePage);
+var gamePageSTYLE = getComputedStyle(gamePage);
 
 const APIPage = document.getElementById("APIPage");
-var APIPageSTYLE = get(APIPage);
+var APIPageSTYLE = getComputedStyle(APIPage);
 
 
 function alignHeader(){
