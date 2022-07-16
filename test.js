@@ -14,4 +14,5 @@ request.onload = function () {
 
 request.send();
 
+console.log(movies);
 APIOutput.textContent = movies;
