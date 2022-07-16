@@ -15,6 +15,15 @@
     /*left: 5%;*/
 }
 
+#headerButtons {
+    position: absolute;
+    height: 90%;
+    top: 5%;
+
+    background-color: rgb(255, 255, 255);
+}
+
+
 #homePage {
     position: absolute;
     width: 15vw;

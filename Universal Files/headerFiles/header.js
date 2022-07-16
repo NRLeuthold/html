@@ -13,21 +13,26 @@ var gamePageSTYLE = getComputedStyle(gamePage);
 const APIPage = document.getElementById("APIPage");
 var APIPageSTYLE = getComputedStyle(APIPage);
 
+const headerButtons = document.getElementById("headerButtons");
+var headerButtonsSTYLE = getComputedStyle(headerButtons);
+
 
 function alignHeader(){
     headerSTYLE = getComputedStyle(header);
-    header.style.left = (window.innerWidth/2) - (parseInt(headerSTYLE.width)/2) + "px";
-
-    logoSTYLE = getComputedStyle(logo);
-    logo.style.left = (parseInt(headerSTYLE.height)-(parseInt(logoSTYLE.height)))/2 + "px";
-
     homePageSTYLE = getComputedStyle(homePage);
     gamePageSTYLE = getComputedStyle(gamePage);
     APIPageSTYLE = getComputedStyle(APIPage);
+    logoSTYLE = getComputedStyle(logo);
 
+    header.style.left = (window.innerWidth/2) - (parseInt(headerSTYLE.width)/2) + "px";
+    logo.style.left = (parseInt(headerSTYLE.height)-(parseInt(logoSTYLE.height)))/2 + "px";
+
+    
     var logoAreaWidth = (parseFloat(logoSTYLE.width) + (parseFloat(logoSTYLE.left)*2));
     var buttonAreaWidth = ((parseFloat(headerSTYLE.width) - logoAreaWidth));
     var buttonSpacing = ((buttonAreaWidth - ((parseInt(homePageSTYLE.width))*3)) / 3);
+
+    headerButtons.style.left = logoAreaWidth;
 
     //homePage.style.left = parseInt(logoSTYLE.width) + (parseInt(logoSTYLE.left)*2) + "px";
     //homePage.style.left = ((parseFloat(headerSTYLE.width) + (parseFloat(logoSTYLE.width) + parseFloat(logoSTYLE.left) - (parseFloat(homePageSTYLE.width) + parseFloat(gamePageSTYLE.width) + parseFloat(APIPageSTYLE.width)))))/3 + "px";
