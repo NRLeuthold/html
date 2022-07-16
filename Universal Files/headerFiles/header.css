@@ -26,7 +26,7 @@
 
 #homePage {
     position: absolute;
-    width: 15%;
+    width: 25%;
     height: 65%;
     top: 15%;
     /*left: 27%;*/
@@ -44,7 +44,7 @@
 
 #gamePage {
     position: absolute;
-    width: 15%;
+    width: 25%;
     height: 65%;
     top: 15%;
     /*left: 52%;*/
@@ -63,7 +63,7 @@
 
 #APIPage {
 	position: absolute;
-    width: 15%;
+    width: 25%;
     height: 65%;
     top: 15%;
     /*left: 77%;*/
