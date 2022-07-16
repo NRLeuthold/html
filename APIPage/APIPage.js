@@ -24,7 +24,7 @@ var refresh = setInterval(function () {
     alignAPIPage();
 }, 0.1);
 
-
+/*
 const Http = new XMLHttpRequest();
 
 const url = "https://passwordwolf.com/api";
