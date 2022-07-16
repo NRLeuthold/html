@@ -11,15 +11,11 @@
     line-height: 125%;
 }
 
-#passwordAPI {
+#nameAPI {
     position: absolute;
     width: 85%;
     height: 210px;
     top: 300px;
 
     background-color: white;
-}
-
-#APIOutput {
-    color: black;
 }
