@@ -50,13 +50,13 @@
     background-color: rgb(140, 176, 180);
 }
 
-#APIOutput {
+#nameAPIOutput {
     position: absolute;
     display: none;
     font-weight: bold;
 }
 
-#APIOutputERR {
+#nameAPIOutputERR {
     position: absolute;
     display: none;
     font-weight: bold;
