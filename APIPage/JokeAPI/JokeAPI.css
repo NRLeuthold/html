@@ -6,3 +6,14 @@
 
     background-color: white;
 }
+
+#jokeTitleDIV {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+#jokeTitle {
+    text-align: center;
+    font-size: 40px;
+}
