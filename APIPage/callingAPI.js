@@ -4,6 +4,7 @@ useNameAPI.addEventListener('click', () => {
     }
     callAPIs();
     APIOutput.style.display = "inline";
+    APIOutputERR.style.display = "none";
 });
 
 
