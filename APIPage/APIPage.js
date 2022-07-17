@@ -13,11 +13,11 @@ var yourNameSTYLE = getComputedStyle(yourName);
 const useNameAPI = document.getElementById("useNameAPI");
 var useNameAPISTYLE = getComputedStyle(useNameAPI);
 
-const APIOutput = document.getElementById("APIOutput");
-var APIOutputSTYLE = getComputedStyle(APIOutput);
+const nameAPIOutput = document.getElementById("nameAPIOutput");
+var nameAPIOutputSTYLE = getComputedStyle(nameAPIOutput);
 
-const APIOutputERR = document.getElementById("APIOutputERR");
-var APIOutputERRSTYLE = getComputedStyle(APIOutputERR);
+const nameAPIOutputERR = document.getElementById("nameAPIOutputERR");
+var nameAPIOutputERRSTYLE = getComputedStyle(nameAPIOutputERR);
 
 function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
@@ -52,21 +52,21 @@ function alignAPIPage() {
         25 +
         "px";
 
-    APIOutput.style.left =
+    nameAPIOutput.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
-        parseFloat(APIOutputSTYLE.width) / 2 +
+        parseFloat(nameAPIOutputSTYLE.width) / 2 +
         "px";
-    APIOutput.style.top =
+    nameAPIOutput.style.top =
         parseInt(useNameAPISTYLE.top) +
         parseInt(useNameAPISTYLE.height) +
         25 +
         "px";
 
-    APIOutputERR.style.left =
+    nameAPIOutputERR.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
-        parseFloat(APIOutputERRSTYLE.width) / 2 +
+        parseFloat(nameAPIOutputERRSTYLE.width) / 2 +
         "px";
-    APIOutputERR.style.top =
+    nameAPIOutputERR.style.top =
         parseInt(useNameAPISTYLE.top) +
         parseInt(useNameAPISTYLE.height) +
         25 +
