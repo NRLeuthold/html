@@ -29,6 +29,15 @@ var jokeAPISTYLE = getComputedStyle(jokeAPI);
 const jokeTitleDIV = document.getElementById("jokeTitleDIV");
 var jokeTitleDIVSTYLE = getComputedStyle(jokeTitleDIV);
 
+const category = document.getElementById("category");
+var categorySTYLE = getComputedStyle(category);
+
+const safeMode = document.getElementById("safeMode");
+var safeModeSTYLE = getComputedStyle(safeMode);
+
+const type = document.getElementById("type");
+var typeSTYLE = getComputedStyle(type);
+
 function alignAPIPage() {
     title.style.left =
         (parseInt(mainContentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
@@ -93,6 +102,11 @@ function alignAPIPage() {
         parseInt(jokeTitleDIVSTYLE.width) / 2 +
         "px";
     jokeTitleDIV.style.top = 0 + "px";
+
+    category.style.top = parseFloat(jokeTitleDIVSTYLE.height);
+    safeMode.style.top = parseFloat(jokeTitleDIVSTYLE.height);
+    type.style.top = parseFloat(jokeTitleDIVSTYLE.height);
+
 }
 
 var refresh = setInterval(function () {

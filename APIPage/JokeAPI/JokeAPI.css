@@ -17,3 +17,15 @@
     text-align: center;
     font-size: 40px;
 }
+
+#category {
+    position: absolute;
+}
+
+#safeMode {
+    position: absolute;
+}
+
+#type {
+    position: absolute;
+}
