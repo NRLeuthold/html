@@ -21,20 +21,30 @@
 #category {
     position: absolute;
     width: 20%;
+}
 
+#categoryTitle {
     text-align: center;
+    font-weight: bold;
 }
 
 #safeMode {
     position: absolute;
     width: 20%;
 
+}
+#safeModeTitle {
     text-align: center;
+    font-weight: bold;
 }
 
 #type {
     position: absolute;
     width: 20%;
 
+}
+
+#titleTitle {
     text-align: center;
+    font-weight: bold;
 }
