@@ -107,6 +107,10 @@ function alignAPIPage() {
     safeMode.style.top = parseFloat(jokeTitleDIVSTYLE.height) + "px";
     type.style.top = parseFloat(jokeTitleDIVSTYLE.height) + "px";
 
+    category.style.width = "15%";
+    safeMode.style.width = "15%";
+    type.style.width = "15%";
+    
 }
 
 var refresh = setInterval(function () {
