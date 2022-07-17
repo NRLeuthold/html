@@ -110,7 +110,13 @@ function alignAPIPage() {
     category.style.width = "15%";
     safeMode.style.width = "15%";
     type.style.width = "15%";
-    
+
+    var formSpacing = ((parseFloat(jokeAPISTYLE.width) - ((parseFloat(categorySTYLE.width))*3)) / 3);
+
+    category.style.left = formSpacing/2 + "px";
+    safeMode.style.left = formSpacing*1.5 + parseFloat(categorySTYLE.width) + "px";
+    type.style.left = formSpacing*2.5 + parseFloat(safeModeSTYLE.width)*2 + "px"'
+
 }
 
 var refresh = setInterval(function () {
