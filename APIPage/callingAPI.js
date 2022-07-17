@@ -1,7 +1,6 @@
 useNameAPI.addEventListener('click', () => {
     if (yourName.value == "") {
-        APIOutput.style.display = "inline";
-        APIOutput.textContent = "Please enter a name"
+        APIOutputERR.style.display = "inline";
     }
     callAPIs();
     APIOutput.style.display = "inline";

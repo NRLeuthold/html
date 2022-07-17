@@ -5,6 +5,7 @@
         "darkgreen",
         "darkred",
         "DIVSTYLE",
+        "ERRSTYLE",
         "onclick",
         "passwordAPISTYLE",
         "xmlhttprequest"

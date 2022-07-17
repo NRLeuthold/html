@@ -16,6 +16,9 @@ var useNameAPISTYLE = getComputedStyle(useNameAPI);
 const APIOutput = document.getElementById("APIOutput");
 var APIOutputSTYLE = getComputedStyle(APIOutput);
 
+const APIOutputERR = document.getElementById("APIOutputERR");
+var APIOutputERRSTYLE = getComputedStyle(APIOutputERR);
+
 function alignAPIPage() {
     titleSTYLE = getComputedStyle(title);
     title.style.left =
@@ -58,8 +61,16 @@ function alignAPIPage() {
         parseInt(useNameAPISTYLE.height) +
         25 +
         "px";
-    
-    
+
+    APIOutputERR.style.left =
+        parseInt(nameAPISTYLE.width) / 2 -
+        parseFloat(APIOutputSTYLE.width) / 2 +
+        "px";
+    APIOutputERR.style.top =
+        parseInt(useNameAPISTYLE.top) +
+        parseInt(useNameAPISTYLE.height) +
+        25 +
+        "px";
 }
 
 var refresh = setInterval(function () {
