@@ -14,6 +14,7 @@ fetch(ageUrl)
     })
     .then((data) => {
         age = data.age;
+        console.log(age);
         age.textContent = age;
     });
 
@@ -23,6 +24,7 @@ fetch(genderUrl)
     })
     .then((data) => {
         gender = data.gender;
+        console.log(gender);
         gender.textContent = gender;
     });
 
@@ -32,6 +34,7 @@ fetch(nationalityUrl)
     })
     .then((data) => {
         nationality = data.country;
+        console.log(nationality);
         nationality.textContent = nationality;
     });
 
