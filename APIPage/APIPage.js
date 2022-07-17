@@ -26,12 +26,15 @@ var nameAPIOutputERRSTYLE = getComputedStyle(nameAPIOutputERR);
 const jokeAPI = document.getElementById("jokeAPI");
 var jokeAPISTYLE = getComputedStyle(jokeAPI);
 
+const jokeTitleDIV = document.getElementById("jokeTitleDIV");
+var jokeTitleDIVSTYLE = getComputedStyle(jokeTitleDIV);
+
 function alignAPIPage() {
     title.style.left =
         (parseInt(mainContentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
         "px";
 
-////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////
 
     nameAPI.style.left =
         (parseInt(mainContentSTYLE.width) - parseInt(nameAPISTYLE.width)) / 2 +
@@ -79,11 +82,17 @@ function alignAPIPage() {
         25 +
         "px";
 
-////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////////////////
 
     jokeAPI.style.left =
         (parseInt(mainContentSTYLE.width) - parseInt(jokeAPISTYLE.width)) / 2 +
         "px";
+
+    jokeTitleDIV.style.left =
+        parseFloat(nameAPISTYLE.width) / 2 -
+        parseInt(jokeTitleDIVSTYLE.width) / 2 +
+        "px";
+    jokeTitleDIV.style.top = 0 + "px";
 }
 
 var refresh = setInterval(function () {
