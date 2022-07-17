@@ -1,5 +1,6 @@
 useNameAPI.addEventListener('click', () => {
     callAPIs();
+    APIOutput.style.display = "inline";
 });
 
 

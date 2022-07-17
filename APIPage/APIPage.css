@@ -52,8 +52,5 @@
 
 #APIOutput {
     position: absolute;
-}
-
-#container p {
-    display: inline;
+    display: none;
 }
