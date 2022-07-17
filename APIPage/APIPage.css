@@ -53,3 +53,7 @@
 #APIOutput {
     position: absolute;
 }
+
+#container p {
+    display: inline;
+}
