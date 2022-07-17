@@ -103,9 +103,9 @@ function alignAPIPage() {
         "px";
     jokeTitleDIV.style.top = 0 + "px";
 
-    category.style.top = parseFloat(jokeTitleDIVSTYLE.height);
-    safeMode.style.top = parseFloat(jokeTitleDIVSTYLE.height);
-    type.style.top = parseFloat(jokeTitleDIVSTYLE.height);
+    category.style.top = parseFloat(jokeTitleDIV.style.height);
+    safeMode.style.top = parseFloat(jokeTitleDIV.style.height);
+    type.style.top = parseFloat(jokeTitleDIV.style.height);
 
 }
 
