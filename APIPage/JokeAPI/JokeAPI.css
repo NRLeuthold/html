@@ -20,12 +20,15 @@
 
 #category {
     position: absolute;
+    width: 10%;
 }
 
 #safeMode {
     position: absolute;
+    width: 10%;
 }
 
 #type {
     position: absolute;
+    width: 10%;
 }
