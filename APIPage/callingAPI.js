@@ -30,4 +30,5 @@ fetch(nationalityUrl)
     })
     .then((data) => {
         nationality.textContent = data.country;
+        console.log(data.country);
     });
