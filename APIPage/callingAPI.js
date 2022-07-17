@@ -23,7 +23,7 @@ fetch(genderUrl)
     })
     .then((data) => {
         gender = data.gender;
-        return gender;
+        APIOutput.textContent = gender;
     });
 
 fetch(nationalityUrl)
@@ -32,7 +32,7 @@ fetch(nationalityUrl)
     })
     .then((data) => {
         nationality = data.country;
-        return nationality;
+        APIOutput.textContent = nationality;
     });
 
 APIOutput.textContent = `AI thinks you are ${age} years old, ${gender}, and from ${nationality}.`;
