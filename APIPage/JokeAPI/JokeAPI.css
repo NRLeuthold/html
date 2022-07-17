@@ -21,6 +21,8 @@
 #category {
     position: absolute;
     width: 20%;
+
+    background-color: lightblue;
 }
 
 #categoryTitle {
@@ -32,6 +34,7 @@
     position: absolute;
     width: 20%;
 
+    background-color: lightblue;
 }
 #safeModeTitle {
     text-align: center;
@@ -42,6 +45,7 @@
     position: absolute;
     width: 20%;
 
+    background-color: lightblue;
 }
 
 #titleTitle {
