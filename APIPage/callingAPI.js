@@ -29,6 +29,6 @@ fetch(nationalityUrl)
         return response.json();
     })
     .then((data) => {
-        nationality.textContent = data.country;
+        nationality.textContent = data.country[0].country_id;
         console.log(data);
     });
