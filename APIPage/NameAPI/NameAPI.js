@@ -2,7 +2,6 @@ useNameAPI.addEventListener("click", () => {
     if (yourName.value == "") {
         nameAPIOutput.style.display = "none";
         nameAPIOutputERR.style.display = "inline";
-        console.log("ERROR");
         return;
     }
     callAPIs();
