@@ -115,7 +115,7 @@ function alignAPIPage() {
 
     category.style.left = formSpacing/2 + "px";
     safeMode.style.left = formSpacing*1.5 + parseFloat(categorySTYLE.width) + "px";
-    type.style.left = formSpacing*2.5 + parseFloat(safeModeSTYLE.width)*2 + "px"'
+    type.style.left = formSpacing*2.5 + parseFloat(safeModeSTYLE.width)*2 + "px";
 
 }
 
