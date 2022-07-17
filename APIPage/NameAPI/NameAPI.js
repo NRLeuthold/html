@@ -1,13 +1,13 @@
 useNameAPI.addEventListener("click", () => {
     if (yourName.value == "") {
-        APIOutput.style.display = "none";
-        APIOutputERR.style.display = "inline";
+        nameAPIOutput.style.display = "none";
+        nameAPIOutputERR.style.display = "inline";
         console.log("ERROR");
         return;
     }
     callAPIs();
-    APIOutput.style.display = "inline";
-    APIOutputERR.style.display = "none";
+    nameAPIOutput.style.display = "inline";
+    nameAPIOutputERR.style.display = "none";
 });
 
 function callAPIs() {
