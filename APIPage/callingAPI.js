@@ -1,4 +1,4 @@
-useNameAPI.addEventListener('click', () => {
+useNameAPI.addEventListener("click", () => {
     if (yourName.value == "") {
         APIOutputERR.style.display = "inline";
         console.log("ERROR");
@@ -9,6 +9,18 @@ useNameAPI.addEventListener('click', () => {
     APIOutputERR.style.display = "none";
 });
 
+useNameAPI.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        if (yourName.value == "") {
+            APIOutputERR.style.display = "inline";
+            console.log("ERROR");
+            return;
+        }
+        callAPIs();
+        APIOutput.style.display = "inline";
+        APIOutputERR.style.display = "none";
+    }
+});
 
 function callAPIs() {
     var name = yourName.value;
