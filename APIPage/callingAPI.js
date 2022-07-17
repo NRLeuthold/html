@@ -27,6 +27,9 @@ function callAPIs() {
         })
         .then((data) => {
             age.textContent = data.age;
+        })
+        .catch((error) => {
+            console.log(error);
         });
 
     fetch(genderUrl)
@@ -35,6 +38,9 @@ function callAPIs() {
         })
         .then((data) => {
             gender.textContent = data.gender;
+        })
+        .catch((error) => {
+            console.log(error);
         });
 
     fetch(nationalityUrl)
@@ -43,6 +49,8 @@ function callAPIs() {
         })
         .then((data) => {
             nationality.textContent = data.country[0].country_id;
-            console.log(data);
+        })
+        .catch((error) => {
+            console.log(error);
         });
 }
