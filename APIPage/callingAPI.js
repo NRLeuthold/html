@@ -14,7 +14,6 @@ fetch(ageUrl)
     })
     .then((data) => {
         age = data.age;
-        return age;
         APIOutput.textContent = age;
     });
 
