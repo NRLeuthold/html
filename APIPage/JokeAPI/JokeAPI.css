@@ -21,14 +21,20 @@
 #category {
     position: absolute;
     width: 20%;
+
+    text-align: center;
 }
 
 #safeMode {
     position: absolute;
     width: 20%;
+
+    text-align: center;
 }
 
 #type {
     position: absolute;
     width: 20%;
+
+    text-align: center;
 }
