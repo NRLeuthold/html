@@ -64,7 +64,7 @@ function alignAPIPage() {
 
     APIOutputERR.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
-        parseFloat(APIOutputSTYLE.width) / 2 +
+        parseFloat(APIOutputERRSTYLE.width) / 2 +
         "px";
     APIOutputERR.style.top =
         parseInt(useNameAPISTYLE.top) +
