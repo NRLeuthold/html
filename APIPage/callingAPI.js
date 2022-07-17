@@ -13,11 +13,9 @@ fetch(ageUrl)
         return response.json();
     })
     .then((data) => {
-        // Work with JSON data here
         age = data.age;
-    })
-    .catch((err) => {
-        // Do something for an error here
+        return age;
+        APIOutput.textContent = age;
     });
 
 fetch(genderUrl)
@@ -25,11 +23,8 @@ fetch(genderUrl)
         return response.json();
     })
     .then((data) => {
-        // Work with JSON data here
         gender = data.gender;
-    })
-    .catch((err) => {
-        // Do something for an error here
+        return gender;
     });
 
 fetch(nationalityUrl)
@@ -37,11 +32,8 @@ fetch(nationalityUrl)
         return response.json();
     })
     .then((data) => {
-        // Work with JSON data here
         nationality = data.country;
-    })
-    .catch((err) => {
-        // Do something for an error here
+        return nationality;
     });
 
 APIOutput.textContent = `AI thinks you are ${age} years old, ${gender}, and from ${nationality}.`;
