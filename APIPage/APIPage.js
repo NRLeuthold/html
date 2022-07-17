@@ -1,6 +1,8 @@
 const title = document.getElementById("title");
 var titleSTYLE = getComputedStyle(title);
 
+////////////////////////////////////////////////////////////////////
+
 const nameAPI = document.getElementById("nameAPI");
 var nameAPISTYLE = getComputedStyle(nameAPI);
 
@@ -19,13 +21,18 @@ var nameAPIOutputSTYLE = getComputedStyle(nameAPIOutput);
 const nameAPIOutputERR = document.getElementById("nameAPIOutputERR");
 var nameAPIOutputERRSTYLE = getComputedStyle(nameAPIOutputERR);
 
+////////////////////////////////////////////////////////////////////
+
+const jokeAPI = document.getElementById("jokeAPI");
+var jokeAPISTYLE = getComputedStyle(jokeAPI);
+
 function alignAPIPage() {
-    titleSTYLE = getComputedStyle(title);
     title.style.left =
         (parseInt(mainContentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
         "px";
 
-    nameAPISTYLE = getComputedStyle(nameAPI);
+////////////////////////////////////////////////////////////////////
+
     nameAPI.style.left =
         (parseInt(mainContentSTYLE.width) - parseInt(nameAPISTYLE.width)) / 2 +
         "px";
@@ -70,6 +77,12 @@ function alignAPIPage() {
         parseInt(useNameAPISTYLE.top) +
         parseInt(useNameAPISTYLE.height) +
         25 +
+        "px";
+
+////////////////////////////////////////////////////////////////////
+
+    jokeAPI.style.left =
+        (parseInt(mainContentSTYLE.width) - parseInt(jokeAPISTYLE.width)) / 2 +
         "px";
 }
 
