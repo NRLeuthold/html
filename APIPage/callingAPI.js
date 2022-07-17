@@ -1,4 +1,4 @@
-var name = "noah";
+var name = yourName.value;
 
 var ageUrl = `https://api.agify.io?name=${name}`;
 var genderUrl = `https://api.genderize.io?name=${name}`;
@@ -14,7 +14,7 @@ fetch(ageUrl)
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data.age);
+        age = data.age;
     })
     .catch((err) => {
         // Do something for an error here
@@ -26,7 +26,7 @@ fetch(genderUrl)
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data.gender);
+        gender = data.gender;
     })
     .catch((err) => {
         // Do something for an error here
@@ -38,11 +38,10 @@ fetch(nationalityUrl)
     })
     .then((data) => {
         // Work with JSON data here
-        console.log(data.country);
+        nationality = data.country;
     })
     .catch((err) => {
         // Do something for an error here
     });
 
 APIOutput.textContent = `AI thinks you are ${age} years old, ${gender}, and from ${nationality}.`;
-
