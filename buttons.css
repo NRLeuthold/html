@@ -28,12 +28,14 @@
     top: 150px;
     height: 50px;
     width: 100%;
+
+    background-color: rgb(169, 169, 169);
 }
 
 #APIButton {
     position: absolute;
-    left: 20px;
-    top: 150px;
+    left: 0px;
+    top: 0px;
     height: 30px;
     border: none;
 
