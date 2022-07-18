@@ -34,7 +34,7 @@ function moveMenu() {
 }
 
 function moveDropdown() {
-    playGameLabel.addEventListener("change", function () {
+    playGameDrop.addEventListener("change", function () {
         if (this.checked) {
             console.log("test");
             playGameLabel.style.transform = "rotate(0deg)";
