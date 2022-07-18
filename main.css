@@ -24,7 +24,11 @@ html {
     font-weight: bold;
     font-size: 30px;
     font-family: 'Courier New', Courier, monospace;
+}
 
+#menuLogo {
+    position: absolute;
+    height: 30px;
 }
 
 /*Icon-----------------------------------------*/
