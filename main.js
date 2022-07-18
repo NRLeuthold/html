@@ -86,10 +86,10 @@ function moveDropdown() {
 
 function moveButtons() {
     if (playGameMenu.style.display == "none") {
-        APIButton.style.transform = "translate(-20px, 75px)"; //moves to 150px
+        APIButton.style.transform = "translate(0px, -75px)"; //moves to 150px
 
     } else if (playGameMenu.style.display == "inline") {
-        APIButton.style.transform = "translate(20px, 75px)"; //moves to 225px
+        APIButton.style.transform = "translate(0px, 75px)"; //moves to 225px
 
     }
 }
