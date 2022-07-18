@@ -34,7 +34,7 @@
 
 #playGameLabel {
     position: absolute;
-    top: 190px;
+    top: 110px;
     right: 40px;
     height: 30px;
     border: none;
@@ -59,7 +59,7 @@
 
 #guessColor {
     position: absolute;
-    top: 215px;
+    top: 145px;
     border: none;
 
     font-size: 17.5px;
@@ -80,7 +80,7 @@
 
 #simon {
     position: absolute;
-    top: 240px;
+    top: 270px;
     border: none;
 
     font-size: 17.5px;

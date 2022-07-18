@@ -89,7 +89,7 @@ function moveButtons() {
         APIButton.style.top = "150px";
 
     } else if (playGameMenu.style.display == "inline") {
-        APIButton.style.top = "125px";
+        APIButton.style.top = "225px";
 
     }
 }
