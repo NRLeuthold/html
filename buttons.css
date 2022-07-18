@@ -1,0 +1,138 @@
+
+#button1 {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#button1:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#button1:active {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#button2 {
+    position: absolute;
+    top: 110px;
+    left: 20px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#button2:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#button2:active {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#button3 {
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#button3:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#button3:active {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#button4 {
+    position: absolute;
+    left: 20px;
+    top: 230px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#button4:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#button4:active {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#button5 {
+    position: absolute;
+    left: 20px;
+    top: 270px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#button5:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#button5:active {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#button6 {
+    position: absolute;
+    left: 20px;
+    top: 310px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#button6:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#button6:active {
+    font-size: 22px;
+    font-weight: normal;
+}

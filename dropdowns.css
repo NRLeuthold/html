@@ -1,0 +1,121 @@
+#dropdown1 {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    height: 30px;
+    border: none;
+
+    display: none;
+    
+}
+
+#dropdown1Title {
+    position: absolute;
+    top: 193px;
+    left: 25px;
+    height: 30px;
+    border: none;
+
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#dropdown1Title:hover {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#dropdown1Title:active {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#dropdown1Label {
+    position: absolute;
+    top: 190px;
+    right: 40px;
+    height: 30px;
+    border: none;
+
+    transform: rotate(-90deg);
+    transition-duration: .1s;
+}
+
+#dropdown1Label:active {
+    transform: rotate(0deg);
+    transition-duration: 1s;
+}
+
+#dropdownMenu {
+    position: absolute;
+    top: 10px;
+    left: 40px;
+    width: 100px;
+    display: none;
+
+}
+
+#dropdownButton1 {
+    position: absolute;
+    top: 215px;
+    border: none;
+
+    font-size: 17.5px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#dropdownButton1:hover {
+    font-weight: bold;
+    font-size: 19.5px;
+}
+
+#dropdownButton1:active {
+    font-size: 19.5px;
+    font-weight: normal;
+}
+
+#dropdownButton2 {
+    position: absolute;
+    top: 240px;
+    border: none;
+
+    font-size: 17.5px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#dropdownButton2:hover {
+    font-weight: bold;
+    font-size: 19.5px;
+}
+
+#dropdownButton2:active {
+    font-size: 19.5px;
+    font-weight: normal;
+}
+
+#dropdownButton3 {
+    position: absolute;
+    top: 265px;
+    border: none;
+
+    font-size: 17.5px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(169, 169, 169);
+}
+
+#dropdownButton3:hover {
+    font-weight: bold;
+    font-size: 19.5px;
+}
+
+#dropdownButton3:active {
+    font-size: 19.5px;
+    font-weight: normal;
+}
