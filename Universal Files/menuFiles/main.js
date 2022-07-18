@@ -9,7 +9,7 @@ const playGameLabel = document.getElementById("playGameLabel");
 const playGameMenu = document.getElementById("playGameMenu");
 const playGameDrop = document.getElementById("playGameDrop");
 
-
+var menuSTYLE = getComputedStyle(menu);
 var playGameMenuSTYLE = getComputedStyle(playGameMenu);
 var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 
