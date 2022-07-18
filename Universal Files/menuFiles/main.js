@@ -5,7 +5,6 @@ const iconLabel = document.getElementById("iconLabel");
 const menu = document.getElementById("menu");
 
 const playGame = document.getElementById("playGame");
-//const playGame = document.getElementById("playGame");
 const playGameLabel = document.getElementById("playGameLabel");
 const playGameMenu = document.getElementById("playGameMenu");
 const playGameDrop = document.getElementById("playGameDrop");
@@ -37,7 +36,7 @@ function moveMenu() {
 }
 
 function moveDropdown() {
-    playGame.style.width = parseFloat(playGameMenuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
+    playGame.style.width = parseFloat(menuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
 
     playGameLabel.addEventListener("change", function () {
         if (this.checked) {
