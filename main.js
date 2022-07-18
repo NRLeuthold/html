@@ -9,8 +9,8 @@ const playGameTitle = document.getElementById("playGameTitle");
 const playGameLabel = document.getElementById("playGameLabel");
 const playGameMenu = document.getElementById("playGameMenu");
 
-var menuSTYLE = getComputedStyle(menu);
-var playGame1LabelSTYLE = getComputedStyle(playGame1Label);
+var playGameMenuSTYLE = getComputedStyle(menu);
+var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 
 const button4 = document.getElementById("APIs");
 
@@ -26,16 +26,16 @@ function moveMenu() {
             icon.style.transform = "rotate(0deg)";
             iconLabel.style.transform = "rotate(0deg)";
 
-            playGame1Label.style.transform = "rotate(-90deg)";
+            playGameLabel.style.transform = "rotate(-90deg)";
             playGameMenu.style.display = "none";
         }
     });
 }
 
 function moveDropdown1() {
-    playGame1Title.style.width = parseFloat(menuSTYLE.width) - 65 - parseFloat(playGame1LabelSTYLE.width) + "px"
+    playGameTitle.style.width = parseFloat(playGameMenuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
 
-    playGame1.addEventListener("change", function () {
+    playGame.addEventListener("change", function () {
         if (this.checked) {
             playGame1Label.style.transform = "rotate(0deg)";
             playGameMenu.style.display = "inline";
@@ -45,40 +45,40 @@ function moveDropdown1() {
         }
     });
 
-    playGame1Label.addEventListener("mouseover", () => {
+    playGameLabel.addEventListener("mouseover", () => {
         playGame1Title.style.fontSize = "22px";
         playGame1Title.style.fontWeight = "bold";
     });
 
-    playGame1Label.addEventListener("mouseout", () => {
+    playGameLabel.addEventListener("mouseout", () => {
         playGame1Title.style.fontSize = "20px";
         playGame1Title.style.fontWeight = "normal";
     });
 
-    playGame1Label.addEventListener("mousedown", () => {
+    playGameLabel.addEventListener("mousedown", () => {
         playGame1Title.style.fontWeight = "normal";
     });
 
-    playGame1Label.addEventListener("mouseup", () => {
+    playGameLabel.addEventListener("mouseup", () => {
         playGame1Title.style.fontSize = "20px";
         playGame1Title.style.fontWeight = "normal";
     });
     /////////////////////////////////////////////////////////
-    playGame1Title.addEventListener("mouseover", () => {
+    playGameTitle.addEventListener("mouseover", () => {
         playGame1Title.style.fontSize = "22px";
         playGame1Title.style.fontWeight = "bold";
     });
 
-    playGame1Title.addEventListener("mouseout", () => {
+    playGameTitle.addEventListener("mouseout", () => {
         playGame1Title.style.fontSize = "20px";
         playGame1Title.style.fontWeight = "normal";
     });
 
-    playGame1Title.addEventListener("mousedown", () => {
+    playGameTitle.addEventListener("mousedown", () => {
         playGame1Title.style.fontWeight = "normal";
     });
 
-    playGame1Title.addEventListener("mouseup", () => {
+    playGameTitle.addEventListener("mouseup", () => {
         playGame1Title.style.fontSize = "20px";
         playGame1Title.style.fontWeight = "normal";
     });
