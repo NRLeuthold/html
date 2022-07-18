@@ -1,4 +1,4 @@
-#playGame1 {
+#playGame {
     position: absolute;
     top: 190px;
     left: 20px;
@@ -9,7 +9,7 @@
     
 }
 
-#playGame1Title {
+#playGameTitle {
     position: absolute;
     top: 193px;
     left: 25px;
@@ -22,17 +22,17 @@
     background-color: rgb(169, 169, 169);
 }
 
-#playGame1Title:hover {
+#playGameTitle:hover {
     font-weight: bold;
     font-size: 22px;
 }
 
-#playGame1Title:active {
+#playGameTitle:active {
     font-size: 22px;
     font-weight: normal;
 }
 
-#playGame1Label {
+#playGameLabel {
     position: absolute;
     top: 190px;
     right: 40px;
@@ -43,7 +43,7 @@
     transition-duration: .1s;
 }
 
-#playGame1Label:active {
+#playGameLabel:active {
     transform: rotate(0deg);
     transition-duration: 1s;
 }
