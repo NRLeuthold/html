@@ -8,6 +8,8 @@ const playGame = document.getElementById("playGame");
 const playGameTitle = document.getElementById("playGameTitle");
 const playGameLabel = document.getElementById("playGameLabel");
 const playGameMenu = document.getElementById("playGameMenu");
+const playGameDrop = document.getElementById("playGameDrop");
+
 
 var playGameMenuSTYLE = getComputedStyle(playGameMenu);
 var playGameLabelSTYLE = getComputedStyle(playGameLabel);
@@ -37,7 +39,7 @@ function moveMenu() {
 function moveDropdown() {
     playGameTitle.style.width = parseFloat(playGameMenuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
 
-    playGameLabel.addEventListener("change", function () {
+    playGameDrop.addEventListener("change", function () {
         if (this.checked) {
             playGameLabel.style.transform = "rotate(0deg)";
             APIButtonBack.style.transform = "translate(0px, 75px)"; //moves to 225px
