@@ -12,7 +12,7 @@ const playGameMenu = document.getElementById("playGameMenu");
 var playGameMenuSTYLE = getComputedStyle(menu);
 var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 
-const APIButton = document.getElementById("APIs");
+const APIButton = document.getElementById("APIButton");
 
 
 function moveMenu() {
