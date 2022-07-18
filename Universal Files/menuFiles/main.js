@@ -96,4 +96,5 @@ function changePage() {
 var refresh = setInterval(function () {
     moveMenu();
     moveDropdown();
+    changePage();
 }, 0.1);
