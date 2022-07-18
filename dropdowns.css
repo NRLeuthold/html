@@ -41,7 +41,7 @@
     border: none;
 
     transform: rotate(-90deg);
-    transition-duration: .1s;
+    transition-duration: .5s;
 }
 
 #playGameLabel:active {
