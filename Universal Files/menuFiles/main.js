@@ -15,7 +15,6 @@ var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 const APIButton = document.getElementById("APIButton");
 const APIButtonBack = document.getElementById("APIButtonBack");
 
-
 function moveMenu() {
     icon.addEventListener("change", function () {
         if (this.checked) {
