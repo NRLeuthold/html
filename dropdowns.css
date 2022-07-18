@@ -61,6 +61,7 @@
     position: absolute;
     top: 145px;
     border: none;
+    white-space: nowrap;
 
     font-size: 17.5px;
     font-family: 'Courier New', Courier, monospace;
