@@ -38,10 +38,10 @@ function moveDropdown() {
     playGame.addEventListener("change", function () {
         if (this.checked) {
             playGameLabel.style.transform = "rotate(0deg)";
-            playGameMenu.style.display = "inline";
+            //playGameMenu.style.display = "inline";
         } else {
             playGameLabel.style.transform = "rotate(-90deg)";
-            playGameMenu.style.display = "none";
+            //playGameMenu.style.display = "none";
         }
     });
 
