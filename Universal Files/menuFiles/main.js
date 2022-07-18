@@ -37,7 +37,7 @@ function moveMenu() {
 }
 
 function moveDropdown() {
-    playGameTitle.style.width = parseFloat(playGameMenuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
+    playGame.style.width = parseFloat(playGameMenuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
 
     playGameLabel.addEventListener("change", function () {
         if (this.checked) {
