@@ -86,6 +86,13 @@ function moveDropdown() {
     });
 }
 
+function changePage() {
+    playGameTitle.addEventListener("change", function () {
+        window.open("http://10.0.0.101/GamePage/gamePage.html", "_self")
+    });
+
+}
+
 var refresh = setInterval(function () {
     moveMenu();
     moveDropdown();
