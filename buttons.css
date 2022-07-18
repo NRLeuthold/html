@@ -31,6 +31,8 @@
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 
+    transition-duration: .1s;
+
     background-color: rgb(169, 169, 169);
 }
 
