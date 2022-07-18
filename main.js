@@ -36,7 +36,7 @@ function moveMenu() {
 function moveDropdown() {
     playGameTitle.style.width = parseFloat(playGameMenuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
 
-    playGame.addEventListener("change", function () {
+    playGameLabel.addEventListener("change", function () {
         if (this.checked) {
             playGameLabel.style.transform = "rotate(0deg)";
             APIButtonBack.style.transform = "translate(0px, 75px)"; //moves to 225px
