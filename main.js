@@ -4,17 +4,16 @@ const icon = document.getElementById("icon");
 const iconLabel = document.getElementById("iconLabel");
 const menu = document.getElementById("menu");
 
-const dropdown1 = document.getElementById("dropdown1");
-const dropdown1Title = document.getElementById("dropdown1Title");
-const dropdown1Label = document.getElementById("dropdown1Label");
-const dropdownMenu = document.getElementById("dropdownMenu");
+const playGame = document.getElementById("playGame");
+const playGameTitle = document.getElementById("playGameTitle");
+const playGameLabel = document.getElementById("playGameLabel");
+const playGameMenu = document.getElementById("playGameMenu");
 
 var menuSTYLE = getComputedStyle(menu);
-var dropdown1LabelSTYLE = getComputedStyle(dropdown1Label);
+var playGame1LabelSTYLE = getComputedStyle(playGame1Label);
 
-const button4 = document.getElementById("button4");
-const button5 = document.getElementById("button5");
-const button6 = document.getElementById("button6");
+const button4 = document.getElementById("APIs");
+
 
 function moveMenu() {
     icon.addEventListener("change", function () {
@@ -27,70 +26,70 @@ function moveMenu() {
             icon.style.transform = "rotate(0deg)";
             iconLabel.style.transform = "rotate(0deg)";
 
-            dropdown1Label.style.transform = "rotate(-90deg)";
-            dropdownMenu.style.display = "none";
+            playGame1Label.style.transform = "rotate(-90deg)";
+            playGameMenu.style.display = "none";
         }
     });
 }
 
 function moveDropdown1() {
-    dropdown1Title.style.width = parseFloat(menuSTYLE.width) - 65 - parseFloat(dropdown1LabelSTYLE.width) + "px"
+    playGame1Title.style.width = parseFloat(menuSTYLE.width) - 65 - parseFloat(playGame1LabelSTYLE.width) + "px"
 
-    dropdown1.addEventListener("change", function () {
+    playGame1.addEventListener("change", function () {
         if (this.checked) {
-            dropdown1Label.style.transform = "rotate(0deg)";
-            dropdownMenu.style.display = "inline";
+            playGame1Label.style.transform = "rotate(0deg)";
+            playGameMenu.style.display = "inline";
         } else {
-            dropdown1Label.style.transform = "rotate(-90deg)";
-            dropdownMenu.style.display = "none";
+            playGame1Label.style.transform = "rotate(-90deg)";
+            playGameMenu.style.display = "none";
         }
     });
 
-    dropdown1Label.addEventListener("mouseover", () => {
-        dropdown1Title.style.fontSize = "22px";
-        dropdown1Title.style.fontWeight = "bold";
+    playGame1Label.addEventListener("mouseover", () => {
+        playGame1Title.style.fontSize = "22px";
+        playGame1Title.style.fontWeight = "bold";
     });
 
-    dropdown1Label.addEventListener("mouseout", () => {
-        dropdown1Title.style.fontSize = "20px";
-        dropdown1Title.style.fontWeight = "normal";
+    playGame1Label.addEventListener("mouseout", () => {
+        playGame1Title.style.fontSize = "20px";
+        playGame1Title.style.fontWeight = "normal";
     });
 
-    dropdown1Label.addEventListener("mousedown", () => {
-        dropdown1Title.style.fontWeight = "normal";
+    playGame1Label.addEventListener("mousedown", () => {
+        playGame1Title.style.fontWeight = "normal";
     });
 
-    dropdown1Label.addEventListener("mouseup", () => {
-        dropdown1Title.style.fontSize = "20px";
-        dropdown1Title.style.fontWeight = "normal";
+    playGame1Label.addEventListener("mouseup", () => {
+        playGame1Title.style.fontSize = "20px";
+        playGame1Title.style.fontWeight = "normal";
     });
     /////////////////////////////////////////////////////////
-    dropdown1Title.addEventListener("mouseover", () => {
-        dropdown1Title.style.fontSize = "22px";
-        dropdown1Title.style.fontWeight = "bold";
+    playGame1Title.addEventListener("mouseover", () => {
+        playGame1Title.style.fontSize = "22px";
+        playGame1Title.style.fontWeight = "bold";
     });
 
-    dropdown1Title.addEventListener("mouseout", () => {
-        dropdown1Title.style.fontSize = "20px";
-        dropdown1Title.style.fontWeight = "normal";
+    playGame1Title.addEventListener("mouseout", () => {
+        playGame1Title.style.fontSize = "20px";
+        playGame1Title.style.fontWeight = "normal";
     });
 
-    dropdown1Title.addEventListener("mousedown", () => {
-        dropdown1Title.style.fontWeight = "normal";
+    playGame1Title.addEventListener("mousedown", () => {
+        playGame1Title.style.fontWeight = "normal";
     });
 
-    dropdown1Title.addEventListener("mouseup", () => {
-        dropdown1Title.style.fontSize = "20px";
-        dropdown1Title.style.fontWeight = "normal";
+    playGame1Title.addEventListener("mouseup", () => {
+        playGame1Title.style.fontSize = "20px";
+        playGame1Title.style.fontWeight = "normal";
     });
 }
 
 function moveButtons() {
-    if (dropdownMenu.style.display == "none") {
+    if (playGameMenu.style.display == "none") {
         button4.style.top = "230px";
         button5.style.top = "270px";
         button6.style.top = "310px";
-    } else if (dropdownMenu.style.display == "inline") {
+    } else if (playGameMenu.style.display == "inline") {
         button4.style.top = "305px";
         button5.style.top = "345px";
         button6.style.top = "395px";

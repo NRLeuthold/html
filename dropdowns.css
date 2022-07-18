@@ -1,4 +1,4 @@
-#dropdown1 {
+#playGame1 {
     position: absolute;
     top: 190px;
     left: 20px;
@@ -9,7 +9,7 @@
     
 }
 
-#dropdown1Title {
+#playGame1Title {
     position: absolute;
     top: 193px;
     left: 25px;
@@ -22,17 +22,17 @@
     background-color: rgb(169, 169, 169);
 }
 
-#dropdown1Title:hover {
+#playGame1Title:hover {
     font-weight: bold;
     font-size: 22px;
 }
 
-#dropdown1Title:active {
+#playGame1Title:active {
     font-size: 22px;
     font-weight: normal;
 }
 
-#dropdown1Label {
+#playGame1Label {
     position: absolute;
     top: 190px;
     right: 40px;
@@ -43,12 +43,12 @@
     transition-duration: .1s;
 }
 
-#dropdown1Label:active {
+#playGame1Label:active {
     transform: rotate(0deg);
     transition-duration: 1s;
 }
 
-#dropdownMenu {
+#playGameMenu {
     position: absolute;
     top: 10px;
     left: 40px;
@@ -57,7 +57,7 @@
 
 }
 
-#dropdownButton1 {
+#guessColor {
     position: absolute;
     top: 215px;
     border: none;
@@ -68,17 +68,17 @@
     background-color: rgb(169, 169, 169);
 }
 
-#dropdownButton1:hover {
+#guessColor:hover {
     font-weight: bold;
     font-size: 19.5px;
 }
 
-#dropdownButton1:active {
+#guessColor:active {
     font-size: 19.5px;
     font-weight: normal;
 }
 
-#dropdownButton2 {
+#simon {
     position: absolute;
     top: 240px;
     border: none;
@@ -89,33 +89,12 @@
     background-color: rgb(169, 169, 169);
 }
 
-#dropdownButton2:hover {
+#simon:hover {
     font-weight: bold;
     font-size: 19.5px;
 }
 
-#dropdownButton2:active {
-    font-size: 19.5px;
-    font-weight: normal;
-}
-
-#dropdownButton3 {
-    position: absolute;
-    top: 265px;
-    border: none;
-
-    font-size: 17.5px;
-    font-family: 'Courier New', Courier, monospace;
-
-    background-color: rgb(169, 169, 169);
-}
-
-#dropdownButton3:hover {
-    font-weight: bold;
-    font-size: 19.5px;
-}
-
-#dropdownButton3:active {
+#simon:active {
     font-size: 19.5px;
     font-weight: normal;
 }
