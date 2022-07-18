@@ -86,7 +86,7 @@ function moveDropdown() {
 
 function moveButtons() {
     if (playGameMenu.style.display == "none") {
-        APIButton.style.top = "150px";
+        APIButton.style.transform = "translate(-20px, 75px)"; //moves to 150px
 
     } else if (playGameMenu.style.display == "inline") {
         APIButton.style.transform = "translate(20px, 75px)"; //moves to 225px
