@@ -39,10 +39,10 @@ function moveDropdown() {
     playGame.addEventListener("change", function () {
         if (this.checked) {
             playGameLabel.style.transform = "rotate(0deg)";
-            //playGameMenu.style.display = "inline";
+            APIButtonBack.style.transform = "translate(0px, 75px)"; //moves to 225px
         } else {
             playGameLabel.style.transform = "rotate(-90deg)";
-            //playGameMenu.style.display = "none";
+            APIButtonBack.style.transform = "translate(0px, 0px)"; //moves to 150px
         }
     });
 
@@ -85,18 +85,7 @@ function moveDropdown() {
     });
 }
 
-function moveButtons() {
-    if (playGameMenu.style.display == "none") {
-        APIButtonBack.style.transform = "translate(0px, 0px)"; //moves to 150px
-
-    } else if (playGameMenu.style.display == "inline") {
-        APIButtonBack.style.transform = "translate(0px, 75px)"; //moves to 225px
-
-    }
-}
-
 var refresh = setInterval(function () {
     moveMenu();
     moveDropdown();
-    moveButtons();
 }, 0.1);
