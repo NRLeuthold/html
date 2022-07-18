@@ -22,12 +22,12 @@
     background-color: rgb(169, 169, 169);
 }
 
-#playGameTitle:hover {
+#playGame:hover {
     font-weight: bold;
     font-size: 22px;
 }
 
-#playGameTitle:active {
+#playGame:active {
     font-size: 22px;
     font-weight: normal;
 }
