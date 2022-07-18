@@ -13,20 +13,20 @@
             <input id="icon" type="checkbox" />
             <label for="icon"><img id="iconLabel" src="Assets/menu_icon.png" /></label>
 
-            <button id="homeButton">Home</button>
+            <button id="homeButton" onclick="window.location.href=`http://10.0.0.101/`">Home</button>
 
             <input id="playGame" type="checkbox"></input>
             <label for="playGame">
-                <div id="playGameTitle">Play a Game</div>
+                <div id="playGameTitle" onclick="window.location.href=`http://10.0.0.101/GamePage/GamePage.html`">Play a Game</div>
                 <img id="playGameLabel" src="Assets/dropdown_icon.png" />
             </label>
             <div id="playGameMenu">
-                <button id="guessColor">Guess the Color</button>
-                <button id="simon">Simon</button>
+                <button id="guessColor" onclick="window.location.href=`http://10.0.0.101/GamePage/GameFiles/Colors/colors.html`">Guess the Color</button>
+                <button id="simon" onclick="window.location.href=`http://10.0.0.101/GamePage/GameFiles/Simon/simon.html`">Simon</button>
             </div>
 
             <div id="APIButtonBack">
-                <button id="APIButton">APIs</button>
+                <button id="APIButton" onclick="window.location.href=`http://10.0.0.101/APIPage/APIPage.html`">APIs</button>
             </div>
         </div>
         <script type="text/javascript" src="main.js"></script>
