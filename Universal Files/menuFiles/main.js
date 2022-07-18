@@ -36,8 +36,6 @@ function moveMenu() {
 }
 
 function moveDropdown() {
-    playGame.style.width = parseFloat(menuSTYLE.width) - 65 - parseFloat(playGameLabelSTYLE.width) + "px"
-
     playGameLabel.addEventListener("change", function () {
         if (this.checked) {
             playGameLabel.style.transform = "rotate(0deg)";
