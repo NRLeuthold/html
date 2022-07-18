@@ -36,6 +36,7 @@ function moveMenu() {
 function moveDropdown() {
     playGameLabel.addEventListener("change", function () {
         if (this.checked) {
+            console.log("test");
             playGameLabel.style.transform = "rotate(0deg)";
             APIButtonBack.style.transform = "translate(0px, 75px)"; //moves to 225px
         } else {
