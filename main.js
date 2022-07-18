@@ -13,6 +13,7 @@ var playGameMenuSTYLE = getComputedStyle(menu);
 var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 
 const APIButton = document.getElementById("APIButton");
+const APIButtonBack = document.getElementById("APIButtonBack");
 
 
 function moveMenu() {
@@ -86,10 +87,10 @@ function moveDropdown() {
 
 function moveButtons() {
     if (playGameMenu.style.display == "none") {
-        APIButton.style.transform = "translate(0px, 0px)"; //moves to 150px
+        APIButtonBack.style.transform = "translate(0px, 0px)"; //moves to 150px
 
     } else if (playGameMenu.style.display == "inline") {
-        APIButton.style.transform = "translate(0px, 75px)"; //moves to 225px
+        APIButtonBack.style.transform = "translate(0px, 75px)"; //moves to 225px
 
     }
 }
