@@ -12,7 +12,7 @@ const playGameMenu = document.getElementById("playGameMenu");
 var playGameMenuSTYLE = getComputedStyle(menu);
 var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 
-const button4 = document.getElementById("APIs");
+const APIButton = document.getElementById("APIs");
 
 
 function moveMenu() {
@@ -86,13 +86,11 @@ function moveDropdown() {
 
 function moveButtons() {
     if (playGameMenu.style.display == "none") {
-        button4.style.top = "230px";
-        button5.style.top = "270px";
-        button6.style.top = "310px";
+        APIButton.style.top = "150px";
+
     } else if (playGameMenu.style.display == "inline") {
-        button4.style.top = "305px";
-        button5.style.top = "345px";
-        button6.style.top = "395px";
+        APIButton.style.top = "125px";
+
     }
 }
 
