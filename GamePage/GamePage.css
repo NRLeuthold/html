@@ -15,7 +15,7 @@
 
 #simonImg {
     position: absolute;
-    clip-path: circle();
+    border-radius: 50%;
     height: 90%;
     top: 5%;
 }
