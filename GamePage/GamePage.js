@@ -3,6 +3,8 @@ var simonImgSTYLE = getComputedStyle(simonImg);
 
 function alignGamePage() {
     simonImg.style.width = parseFloat(simonImgSTYLE.height) + "px";
+    simonImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
+
 }
 
 var refresh = setInterval(function () {
