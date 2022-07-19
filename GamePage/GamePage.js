@@ -12,7 +12,7 @@ function alignGamePage() {
     simonImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
 
     simonTitle.style.left = parseFloat(simonImgSTYLE.left) + (parseFloat(simonGame) - (parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width)))/2 + "px";
-
+    console.log(simonGameSTYLE.left);
 }
 
 var refresh = setInterval(function () {
