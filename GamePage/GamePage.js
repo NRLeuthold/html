@@ -17,7 +17,7 @@ const simonPlay = document.getElementById("simonPlay");
 var simonPlaySTYLE = getComputedStyle(simonPlay);
 
 function alignGamePage() {
-    content.style.left = parseFloat(menuSTYLE.left) + parseFloat(menuSTYLE.width);
+    content.style.left = parseFloat(menuSTYLE.left) + parseFloat(menuSTYLE.width) + "px";
 
     simonImg.style.width = parseFloat(simonImgSTYLE.height) + "px";
     simonImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
