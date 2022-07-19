@@ -41,7 +41,6 @@
 #simonPlay {
     position: absolute;
 
-    font-weight: bold;
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
 
@@ -52,11 +51,13 @@
 }
 
 #simonPlay:hover {
+    font-weight: bold;
     color: rgb(199, 199, 199);
     font-size: 22px;
 }
 
 #simonPlay:active {
+    font-weight: normal;
     color: rgb(169, 169, 169);
     font-size: 22px;
 }
