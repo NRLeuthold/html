@@ -1,7 +1,8 @@
 const simonImg = document.getElementById("simonImg");
+var simonImgSTYLE = getComputedStyle(simonImg);
 
 function alignGamePage() {
-    simonImg.style.width = simon.style.height;
+    simonImg.style.width = parseFloat(simonImgSTYLE.height) + "px";
 }
 
 var refresh = setInterval(function () {
