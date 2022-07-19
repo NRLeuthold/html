@@ -8,7 +8,7 @@ function alignGamePage() {
     simonImg.style.width = parseFloat(simonImgSTYLE.height) + "px";
     simonImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
 
-    simonTitle.style.left = parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.right);
+    simonTitle.style.left = parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.right) + "px";
 
 }
 
