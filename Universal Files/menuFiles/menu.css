@@ -212,3 +212,14 @@ html {
     font-size: 19.5px;
     font-weight: normal;
 }
+
+#sideTitle {
+    position: absolute;
+    top: 50px;
+    right: 10px; 
+    width: 30px;
+
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
