@@ -1,0 +1,15 @@
+#content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#simonGame {
+    position: absolute;
+    top: 10%;
+    left: 17.5%;
+    width: 65%;
+    height: 40%;
+
+    background-color: white;
+}
