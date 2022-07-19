@@ -24,12 +24,14 @@ function alignGamePage() {
 
     simonPlay.style.left = parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width) + (parseFloat(simonGameSTYLE.width) - (parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width)))/2 - parseFloat(simonPlaySTYLE.width)/2 + "px";
 
+
+    
+    simonTitle.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height) - 10))/2 + "px";
+    simonBlurb.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height)))/2 + parseFloat(simonTitleSTYLE.height) + 8 + "px";
+    simonPlay.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height)))/2 + parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 26 + "px";
+
+
 }
-
-simonTitle.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height) - 10))/2 + "px";
-simonBlurb.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height)))/2 + parseFloat(simonTitleSTYLE.height) + 8 + "px";
-simonPlay.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height)))/2 + parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 26 + "px";
-
 
 
 var refresh = setInterval(function () {
