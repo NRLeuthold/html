@@ -16,12 +16,15 @@ var playGameLabelSTYLE = getComputedStyle(playGameLabel);
 const APIButton = document.getElementById("APIButton");
 const APIButtonBack = document.getElementById("APIButtonBack");
 
+const sideTitle = document.getElementById("sideTitle");
+
 function moveMenu() {
     icon.addEventListener("change", function () {
         if (this.checked) {
             menu.style.transform = "translate(250px, 0px)";
             icon.style.transform = "rotate(90deg)";
             iconLabel.style.transform = "rotate(90deg)";
+            sideTitle.style.display = "none";
         } else {
             menu.style.transform = "translate(0px, 0px)";
             icon.style.transform = "rotate(0deg)";
@@ -29,6 +32,8 @@ function moveMenu() {
 
             playGameLabel.style.transform = "rotate(-90deg)";
             playGameMenu.style.display = "none";
+
+            sideTitle.style.display = "inline";
         }
     });
 }
