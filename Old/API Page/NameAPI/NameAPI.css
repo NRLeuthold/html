@@ -1,0 +1,63 @@
+#title {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    top: 150px;
+
+    background-color: white;
+
+    font-size: 75px;
+    text-align: center;
+    line-height: 125%;
+}
+
+#nameAPI {
+    position: absolute;
+    width: 85%;
+    height: 250px;
+    top: 300px;
+
+    background-color: white;
+}
+
+#nameTitleDIV {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+#nameTitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+#yourName {
+    position: absolute;
+}
+
+#useNameAPI {
+    position: absolute;
+    width: 10%;
+
+    background-color: rgb(180, 216, 220);
+}
+
+#useNameAPI:hover {
+    background-color: rgb(160, 196, 200);
+}
+
+#useNameAPI:active {
+    background-color: rgb(140, 176, 180);
+}
+
+#nameAPIOutput {
+    position: absolute;
+    display: none;
+    font-weight: bold;
+}
+
+#nameAPIOutputERR {
+    position: absolute;
+    display: none;
+    font-weight: bold;
+}

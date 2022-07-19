@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Use an API</title>
+        <link rel="stylesheet" href="http://10.0.0.101/APIPage/NameAPI/NameAPI.css" />
+        <link rel="stylesheet" href="http://10.0.0.101/APIPage/JokeAPI/JokeAPI.css" />
+		<link rel="stylesheet" href="http://10.0.0.101/Universal Files/headerFiles/header.css" />
+        <link rel="stylesheet" href="http://10.0.0.101/Universal Files/commonContentFiles/commonContent.css" />
+    </head>
+    <body>
+        <div id="header">
+			<img id="logo" src="http://10.0.0.101/Universal Files/Assets/Logo.png" onclick="window.location.reload()"></img>
+
+            <div id="headerButtons">
+				<button id="homePage" onclick="window.location.href=`http://10.0.0.101/`">Home</button>
+				<button id="gamePage" onclick="window.location.href=`http://10.0.0.101/GamePage/gamePage.html`">Play a Game</button>
+				<button id="APIPage" onclick="window.location.href=`http://10.0.0.101/APIPage/APIPage.html`">API</button>
+			</div>
+		</div>
+        
+		<div id="mainContent">
+			<div id="title">APIs</div>
+
+            <div id="nameAPI">
+                <div id="nameTitleDIV">
+                    <p id="nameTitle">Who does an AI think you are?</p>
+                </div>
+
+                <input id="yourName" type="text" placeholder="What is your name?"></input>
+                <button id="useNameAPI">Go</button>
+
+                <div id="nameAPIOutput">
+                    AI thinks you are a
+                    <span id="age"></span>
+                    year old
+                    <span id="gender"></span>
+                    from
+                    <span id="nationality"></span>
+                    .
+                </div>
+                <div id="nameAPIOutputERR">Please enter a name</div>
+            </div>
+
+            <div id="jokeAPI">
+                <div id="jokeTitleDIV">
+                    <p id="jokeTitle">Generate a joke</p>
+                </div>
+
+                <div id="category">
+                    <p id="categoryTitle">CATEGORY:</p>
+                    <br>
+                    <label for="any">Any:</label><input type="checkbox" id="any" value="any"/>
+                    <br>
+                    <br>
+                    <label for="Programming">Programming:</label><input type="checkbox" id="Programming" value="Programming"/>
+                    <br>
+                    <label for="Dark">Dark:</label><input type="checkbox" id="Dark" value="Dark"/>
+                    <br>
+                    <label for="Pun">Pun:</label><input type="checkbox" id="Pun" value="Pun"/>
+                    <br>
+                    <label for="Spooky">Spooky:</label><input type="checkbox" id="Spooky" value="Spooky"/>
+                    <br>
+                    <label for="Christmas">Christmas:</label><input type="checkbox" id="Christmas" value="Christmas"/>
+                    <br>
+                    <label for="Misc">Misc:</label><input type="checkbox" id="Misc" value="Misc"/>
+                </div>
+
+                <div id="safeMode">
+                    <p id=safeModeTitle>SAFE-MODE:</p>
+                    <br>
+                    <label for="Safe-mode">Safe-mode:</label><input type="checkbox" id="Safe-mode" value="Safe-mode"/>
+                </div>
+
+                <div id="type">
+                    <p id="typeTitle">TYPE:</p>
+                    <br>
+                    <label for="Single">Single:</label><input type="checkbox" id="Single" value="Single"/>
+                    <br>
+                    <label for="Two-part">Two-part:</label><input type="checkbox" id="Two-part" value="Two-part"/>
+                </div>
+            </div>
+		</div>
+
+		<script type="text/javascript" src="http://10.0.0.101/Universal Files/headerFiles/header.js"></script>
+		<script type="text/javascript" src="http://10.0.0.101/Universal Files/commonContentFiles/commonContent.js"></script>
+        <script type="text/javascript" src="http://10.0.0.101/APIPage/APIPage.js"></script>
+        <script type="text/javascript" src="http://10.0.0.101/APIPage/NameAPI/NameAPI.js"></script>
+        <script type="text/javascript" src="http://10.0.0.101/APIPage/JokeAPI/JokeAPI.js"></script>
+    </body>
+</html>

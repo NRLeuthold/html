@@ -1,0 +1,12 @@
+#title {
+    position: absolute;
+    width: 90%;
+    height: 100px;
+    top: 150px;
+
+    background-color: white;
+
+    font-size: 75px;
+    text-align: center;
+    line-height: 125%;
+}

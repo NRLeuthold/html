@@ -15,5 +15,5 @@
 }
 
 #simonImg {
-    border-radius: 50%;
+    clip-path: circle();
 }

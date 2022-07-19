@@ -1,0 +1,86 @@
+#header {
+	position: fixed;
+	width: 80%;
+	height: 20%;
+	top: 0;
+
+	z-index: 1;
+	background-color: gray;
+}
+
+#logo {
+	position: absolute;
+	width: 30%;
+	height: 90%;
+	top: 5%;
+	left: 5%;
+
+	background-color: black;
+
+	text-align: center;
+	color: white;
+	line-height: 17.5vh;
+}
+
+#homePage {
+	position: absolute;
+	width: 15vw;
+	height: 10vh;
+	top: 30%;
+	left: 35%;
+	
+	background-color: green;
+}
+
+#homePage:hover {
+	background-color: rgb(7, 80, 7);
+}
+
+#homePage:active {
+	background-color: rgb(15, 50, 15);
+}
+
+#gamePage {
+	position: absolute;
+	width: 15vw;
+	height: 10vh;
+	top: 30%;
+	left: 60%;
+	
+	background-color: green;
+}
+
+#gamePage:hover {
+	background-color: rgb(7, 80, 7);
+}
+
+#gamePage:active {
+	background-color: rgb(15, 50, 15);
+}
+
+.center {
+	width: 50%;
+	border: 3px solid;
+	z-index: 1000;
+}
+
+#game {
+	font-weight: bold;
+}
+
+#mainContent {
+	position: absolute;
+	width: 75%;
+	height: 10000px;
+	top: 0;
+
+	background-color: yellow;
+}
+
+#playgame {
+	position: absolute;
+	width: 25%;
+	height: 10%;
+
+	background: black;
+}

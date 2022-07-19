@@ -1,0 +1,54 @@
+#jokeAPI {
+    position: absolute;
+    width: 85%;
+    height: 250px;
+    top: 600px;
+
+    background-color: white;
+}
+
+#jokeTitleDIV {
+    position: absolute;
+    top: 0px;
+    text-align: center;
+}
+
+#jokeTitle {
+    text-align: center;
+    font-size: 40px;
+}
+
+#category {
+    position: absolute;
+    width: 20%;
+
+    background-color: lightblue;
+}
+
+#categoryTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+#safeMode {
+    position: absolute;
+    width: 20%;
+
+    background-color: lightblue;
+}
+#safeModeTitle {
+    text-align: center;
+    font-weight: bold;
+}
+
+#type {
+    position: absolute;
+    width: 20%;
+
+    background-color: lightblue;
+}
+
+#titleTitle {
+    text-align: center;
+    font-weight: bold;
+}
