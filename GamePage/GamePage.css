@@ -50,3 +50,13 @@
 
     border: none;
 }
+
+#simonPlay:hover {
+    color: rgb(199, 199, 199);
+    font-size: 22px;
+}
+
+#simonPlay:active {
+    color: rgb(169, 169, 169);
+    font-size: 22px;
+}
