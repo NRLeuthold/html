@@ -12,7 +12,6 @@ function alignGamePage() {
     simonImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
 
     simonTitle.style.left = parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width) + (parseFloat(simonGameSTYLE.width) - (parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width)))/2 - parseFloat(simonTitleSTYLE.width)/2 + "px";
-    console.log(simonGameSTYLE.left);
 }
 
 var refresh = setInterval(function () {
