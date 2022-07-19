@@ -27,8 +27,8 @@ function alignGamePage() {
 
     
     simonTitle.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height) - 10))/2 + "px";
-    simonBlurb.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height)))/2 + parseFloat(simonTitleSTYLE.height) + 8 + "px";
-    simonPlay.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + parseFloat(simonPlaySTYLE.height)))/2 + parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 26 + "px";
+    simonBlurb.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 25))/2 + parseFloat(simonTitleSTYLE.height) + 8 + "px";
+    simonPlay.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 25))/2 + parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 26 + "px";
 
 
 }
