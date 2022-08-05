@@ -63,3 +63,63 @@
     color: rgb(169, 169, 169);
     font-size: 22px;
 }
+
+#colorGame {
+    position: absolute;
+    top: 60%;
+    left: 17.5%;
+    width: 65%;
+    height: 40%;
+
+}
+
+#colorImg {
+    position: absolute;
+    border-radius: 50%;
+    height: 90%;
+    top: 555%;
+}
+
+#colorTitle {
+    position: absolute;
+
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(169, 169, 169);
+}
+
+#colorBlurb {
+    position: absolute;
+
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(169, 169, 169);
+}
+
+#colorPlay {
+    position: absolute;
+    width: 150px;
+
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: rgb(30, 30, 30);
+    color: rgb(169, 169, 169);
+
+    border: none;
+}
+
+#colorPlay:hover {
+    font-weight: bold;
+    color: rgb(199, 199, 199);
+    font-size: 22px;
+}
+
+#colorPlay:active {
+    font-weight: normal;
+    color: rgb(169, 169, 169);
+    font-size: 22px;
+}
