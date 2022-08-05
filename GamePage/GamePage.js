@@ -57,16 +57,16 @@ function alignGamePage() {
     /////////////////////////////////////////////////////////////////////////////////
 
     //colorImg.style.width = parseFloat(colorImgSTYLE.height) + "px";
-    colorImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
+    colorImg.style.right = parseFloat(simonImgSTYLE.top) + "px";
 
-    colorTitle.style.left = parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorTitleSTYLE.width)/2 + "px";
+    colorTitle.style.right = parseFloat(colorImgSTYLE.right) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.right) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorTitleSTYLE.width)/2 + "px";
     colorTitle.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25 - 10))/2 + "px";
 
-    colorBlurb.style.width = parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left)*2 + parseFloat(colorImgSTYLE.width))
-    colorBlurb.style.left = parseFloat(colorImgSTYLE.left)*2 + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorBlurbSTYLE.width)/2 + "px";
+    colorBlurb.style.width = parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.right)*2 + parseFloat(colorImgSTYLE.width))
+    colorBlurb.style.right = parseFloat(colorImgSTYLE.right)*2 + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.right) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorBlurbSTYLE.width)/2 + "px";
     colorBlurb.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25))/2 + parseFloat(colorTitleSTYLE.height) + 8 + "px";
 
-    colorPlay.style.left = parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorPlaySTYLE.width)/2 + "px";
+    colorPlay.style.right = parseFloat(colorImgSTYLE.right) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.right) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorPlaySTYLE.width)/2 + "px";
     colorPlay.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25))/2 + parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 26 + "px";
 
 }
