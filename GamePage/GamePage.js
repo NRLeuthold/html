@@ -1,6 +1,8 @@
 const content = document.getElementById("content");
 var contentSTYLE = getComputedStyle(content);
 
+/////////////////////////////////////////////////////////////////////////////////
+
 const simonGame = document.getElementById("simonGame");
 var simonGameSTYLE = getComputedStyle(simonGame);
 
@@ -16,9 +18,28 @@ var simonBlurbSTYLE = getComputedStyle(simonBlurb);
 const simonPlay = document.getElementById("simonPlay");
 var simonPlaySTYLE = getComputedStyle(simonPlay);
 
+/////////////////////////////////////////////////////////////////////////////////
+
+const colorGame = document.getElementById("colorGame");
+var colorGameSTYLE = getComputedStyle(colorGame);
+
+const colorImg = document.getElementById("colorImg");
+var colorImgSTYLE = getComputedStyle(colorImg);
+
+const colorTitle = document.getElementById("colorTitle");
+var colorTitleSTYLE = getComputedStyle(colorTitle);
+
+const colorBlurb = document.getElementById("colorBlurb");
+var colorBlurbSTYLE = getComputedStyle(colorBlurb);
+
+const colorPlay = document.getElementById("colorPlay");
+var colorPlaySTYLE = getComputedStyle(colorPlay);
+
 function alignGamePage() {
     content.style.left = parseFloat(menuSTYLE.left) + parseFloat(menuSTYLE.width) + "px";
     content.style.width = window.innerWidth - parseFloat(contentSTYLE.left) + "px";
+
+    /////////////////////////////////////////////////////////////////////////////////
 
     simonImg.style.width = parseFloat(simonImgSTYLE.height) + "px";
     simonImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
@@ -32,6 +53,22 @@ function alignGamePage() {
 
     simonPlay.style.left = parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width) + (parseFloat(simonGameSTYLE.width) - (parseFloat(simonImgSTYLE.left) + parseFloat(simonImgSTYLE.width)))/2 - parseFloat(simonPlaySTYLE.width)/2 + "px";
     simonPlay.style.top = (parseFloat(simonGameSTYLE.height) - (parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 25))/2 + parseFloat(simonTitleSTYLE.height) + parseFloat(simonBlurbSTYLE.height) + 26 + "px";
+
+    /////////////////////////////////////////////////////////////////////////////////
+
+    colorImg.style.width = parseFloat(colorImgSTYLE.height) + "px";
+    colorImg.style.left = parseFloat(colorImgSTYLE.top) + "px";
+
+    colorTitle.style.left = parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorTitleSTYLE.width)/2 + "px";
+    colorTitle.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25 - 10))/2 + "px";
+
+    colorBlurb.style.width = parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left)*2 + parseFloat(colorImgSTYLE.width))
+    colorBlurb.style.left = parseFloat(colorImgSTYLE.left)*2 + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorBlurbSTYLE.width)/2 + "px";
+    colorBlurb.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25))/2 + parseFloat(colorTitleSTYLE.height) + 8 + "px";
+
+    colorPlay.style.left = parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorPlaySTYLE.width)/2 + "px";
+    colorPlay.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25))/2 + parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 26 + "px";
+
 
 }
 
