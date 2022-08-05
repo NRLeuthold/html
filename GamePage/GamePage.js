@@ -56,8 +56,8 @@ function alignGamePage() {
 
     /////////////////////////////////////////////////////////////////////////////////
 
-    colorImg.style.width = parseFloat(colorImgSTYLE.height) + "px";
-    colorImg.style.left = parseFloat(colorImgSTYLE.top) + "px";
+    //colorImg.style.width = parseFloat(colorImgSTYLE.height) + "px";
+    colorImg.style.left = parseFloat(simonImgSTYLE.top) + "px";
 
     colorTitle.style.left = parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorTitleSTYLE.width)/2 + "px";
     colorTitle.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25 - 10))/2 + "px";
@@ -68,7 +68,6 @@ function alignGamePage() {
 
     colorPlay.style.left = parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width) + (parseFloat(colorGameSTYLE.width) - (parseFloat(colorImgSTYLE.left) + parseFloat(colorImgSTYLE.width)))/2 - parseFloat(colorPlaySTYLE.width)/2 + "px";
     colorPlay.style.top = (parseFloat(colorGameSTYLE.height) - (parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 25))/2 + parseFloat(colorTitleSTYLE.height) + parseFloat(colorBlurbSTYLE.height) + 26 + "px";
-
 
 }
 
