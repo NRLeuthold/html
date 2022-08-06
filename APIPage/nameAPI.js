@@ -22,6 +22,8 @@ yourName.addEventListener("keydown", function(event) {
     }
 });
 
+let regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
+
 function callAPIs() {
     var name = yourName.value;
 
@@ -60,7 +62,7 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            nationality.textContent = data.country[0].country_id + ".";
+            nationality.textContent = regionNames.of(data.country[0].country_id) + ".";
         })
         .catch((error) => {
             console.log(error);
