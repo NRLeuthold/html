@@ -78,7 +78,7 @@ function alignAPIPage() {
 }
 
 console.log(
-    yourNameSTYLE.top, yourNameSTYLE.height, nameAPIOutputERRSTYLE.top
+    parseInt(yourNameSTYLE.top), parseInt(yourNameSTYLE.height), parseInt(nameAPIOutputERRSTYLE.top)
 )
 
 var refresh = setInterval(function () {
