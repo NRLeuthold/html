@@ -21,18 +21,6 @@ var nameAPIOutputSTYLE = getComputedStyle(nameAPIOutput);
 const nameAPIOutputERR = document.getElementById("nameAPIOutputERR");
 var nameAPIOutputERRSTYLE = getComputedStyle(nameAPIOutputERR);
 
-nameAPIOutputERR.style.top =
-    parseInt(useNameAPISTYLE.top) +
-    parseInt(useNameAPISTYLE.height) +
-    25 +
-    "px";
-
-nameAPIOutput.style.top =
-    parseInt(useNameAPISTYLE.top) +
-    parseInt(useNameAPISTYLE.height) +
-    25 +
-    "px";
-
 function alignAPIPage() {
     content.style.left =
         parseFloat(menuSTYLE.left) + parseFloat(menuSTYLE.width) + "px";
@@ -67,6 +55,12 @@ function alignAPIPage() {
         25 +
         "px";
 
+    nameAPIOutput.style.top =
+        parseInt(useNameAPISTYLE.top) +
+        parseInt(useNameAPISTYLE.height) +
+        25 +
+        "px";
+
     nameAPIOutput.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
         parseFloat(nameAPIOutputSTYLE.width) / 2 +
@@ -75,6 +69,11 @@ function alignAPIPage() {
     nameAPIOutputERR.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
         parseFloat(nameAPIOutputERRSTYLE.width) / 2 +
+        "px";
+    nameAPIOutputERR.style.top =
+        parseInt(useNameAPISTYLE.top) +
+        parseInt(useNameAPISTYLE.height) +
+        25 +
         "px";
 }
 
