@@ -9,7 +9,7 @@ useNameAPI.addEventListener("click", () => {
     nameAPIOutputERR.style.display = "none";
 });
 
-yourName.addEventListener("keypress", (event) => {
+yourName.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
         console.log("Enter has been pressed");
         if (yourName.value == "") {
