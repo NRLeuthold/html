@@ -79,4 +79,4 @@ function alignAPIPage() {
 
 var refresh = setInterval(function () {
     alignAPIPage();
-}, 0.1);
+}, 0.00000000001);
