@@ -10,9 +10,7 @@ useNameAPI.addEventListener("click", () => {
 });
 
 yourName.addEventListener("keypress", (event) => {
-    if (event.keyCode === 13) {
-        event.preventDefault();
-
+    if (event.key === "Enter") {
         if (yourName.value == "") {
             nameAPIOutput.style.display = "none";
             nameAPIOutputERR.style.display = "inline";
