@@ -28,13 +28,13 @@ function alignAPIPage() {
     //////////////////////////////////////////////////////////////////////////////////////
 
     title.style.left =
-        (parseInt(mainContentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
+        (parseInt(contentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
         "px";
 
     ////////////////////////////////////////////////////////////////////
 
     nameAPI.style.left =
-        (parseInt(mainContentSTYLE.width) - parseInt(nameAPISTYLE.width)) / 2 +
+        (parseInt(contentSTYLE.width) - parseInt(nameAPISTYLE.width)) / 2 +
         "px";
 
     nameTitleDIV.style.left =
