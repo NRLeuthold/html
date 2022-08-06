@@ -47,7 +47,7 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            nationality.textContent = data.country[0].country_id;
+            nationality.textContent = data.country[0].country_id + ".";
         })
         .catch((error) => {
             console.log(error);
