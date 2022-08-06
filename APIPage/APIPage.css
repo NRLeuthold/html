@@ -18,7 +18,7 @@
 
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 27px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(169, 169, 169);
 }
@@ -55,9 +55,11 @@
     position: absolute;
 
     font-weight: bold;
-    font-size: 26px;
+    font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(169, 169, 169);
+
+    display: none;
 }
 
 #nameAPIOutputERR {
