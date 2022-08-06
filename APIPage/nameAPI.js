@@ -11,7 +11,6 @@ useNameAPI.addEventListener("click", () => {
 
 yourName.addEventListener("keydown", function(event) {
     if (event.key === "Enter") {
-        console.log("Enter has been pressed");
         if (yourName.value == "") {
             nameAPIOutput.style.display = "none";
             nameAPIOutputERR.style.display = "inline";
