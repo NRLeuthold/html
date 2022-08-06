@@ -77,6 +77,10 @@ function alignAPIPage() {
         "px";
 }
 
+console.log(
+    yourNameSTYLE.top, yourNameSTYLE.height, nameAPIOutputERRSTYLE.top
+)
+
 var refresh = setInterval(function () {
     alignAPIPage();
 }, 0.1);
