@@ -9,6 +9,21 @@ useNameAPI.addEventListener("click", () => {
     nameAPIOutputERR.style.display = "none";
 });
 
+yourName.addEventListener("keypress", (event) => {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+
+        if (yourName.value == "") {
+            nameAPIOutput.style.display = "none";
+            nameAPIOutputERR.style.display = "inline";
+            return;
+        }
+        callAPIs();
+        nameAPIOutput.style.display = "inline";
+        nameAPIOutputERR.style.display = "none";
+    }
+});
+
 function callAPIs() {
     var name = yourName.value;
 
