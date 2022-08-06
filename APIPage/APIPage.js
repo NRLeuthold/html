@@ -25,12 +25,6 @@ function alignAPIPage() {
     content.style.left = parseFloat(menuSTYLE.left) + parseFloat(menuSTYLE.width) + "px";
     content.style.width = window.innerWidth - parseFloat(contentSTYLE.left) + "px";
 
-    //////////////////////////////////////////////////////////////////////////////////////
-
-    title.style.left =
-        (parseInt(contentSTYLE.width) - parseInt(titleSTYLE.width)) / 2 +
-        "px";
-
     ////////////////////////////////////////////////////////////////////
 
     nameAPI.style.left =
