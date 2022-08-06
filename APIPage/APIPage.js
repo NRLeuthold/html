@@ -31,17 +31,17 @@ function alignAPIPage() {
         (parseInt(contentSTYLE.width) - parseInt(nameAPISTYLE.width)) / 2 +
         "px";
 
-    nameTitleDIV.style.left =
+    nameTitle.style.left =
         parseFloat(nameAPISTYLE.width) / 2 -
-        parseInt(nameTitleDIVSTYLE.width) / 2 +
+        parseInt(nameTitleSTYLE.width) / 2 +
         "px";
-    nameTitleDIV.style.top = 0 + "px";
+    nameTitle.style.top = 0 + "px";
 
     yourName.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
         parseFloat(yourNameSTYLE.width) / 2 +
         "px";
-    yourName.style.top = parseInt(nameTitleDIVSTYLE.height) + "px";
+    yourName.style.top = parseInt(nameTitleSTYLE.height) + "px";
 
     useNameAPI.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
