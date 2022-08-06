@@ -75,11 +75,13 @@ function alignAPIPage() {
         parseInt(useNameAPISTYLE.height) +
         25 +
         "px";
+    
+    console.log(
+        parseInt(yourNameSTYLE.top), parseInt(yourNameSTYLE.height), parseInt(nameAPIOutputERRSTYLE.top)
+    )
 }
 
-console.log(
-    parseInt(yourNameSTYLE.top), parseInt(yourNameSTYLE.height), parseInt(nameAPIOutputERRSTYLE.top)
-)
+
 
 var refresh = setInterval(function () {
     alignAPIPage();
