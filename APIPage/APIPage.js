@@ -76,7 +76,7 @@ function alignAPIPage() {
         25 +
         "px";
     */
-    nameAPIOutputERR.style.top = parseInt(yourNameSTYLE.bottom) + 75 + "px";
+    nameAPIOutputERR.style.top = parseInt(yourNameSTYLE.top) + 90 + "px";
 
     console.log(
         parseInt(yourNameSTYLE.top), parseInt(yourNameSTYLE.height), parseInt(nameAPIOutputERRSTYLE.top)
