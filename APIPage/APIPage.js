@@ -70,12 +70,13 @@ function alignAPIPage() {
         parseInt(nameAPISTYLE.width) / 2 -
         parseFloat(nameAPIOutputERRSTYLE.width) / 2 +
         "px";
-    nameAPIOutputERR.style.top =
-        parseInt(useNameAPISTYLE.top) +
-        parseInt(useNameAPISTYLE.height) +
-        25 +
-        "px";
 }
+
+nameAPIOutputERR.style.top =
+    parseInt(useNameAPISTYLE.top) +
+    parseInt(useNameAPISTYLE.height) +
+    25 +
+    "px";
 
 var refresh = setInterval(function () {
     alignAPIPage();
