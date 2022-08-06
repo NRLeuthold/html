@@ -55,11 +55,7 @@ function alignAPIPage() {
         25 +
         "px";
 
-    nameAPIOutput.style.top =
-        parseInt(useNameAPISTYLE.top) +
-        parseInt(useNameAPISTYLE.height) +
-        25 +
-        "px";
+    nameAPIOutput.style.top = parseInt(yourNameSTYLE.top) + 90 + "px";
 
     nameAPIOutput.style.left =
         parseInt(nameAPISTYLE.width) / 2 -
@@ -70,20 +66,9 @@ function alignAPIPage() {
         parseInt(nameAPISTYLE.width) / 2 -
         parseFloat(nameAPIOutputERRSTYLE.width) / 2 +
         "px";
-    /*nameAPIOutputERR.style.top =
-        parseInt(useNameAPISTYLE.top) +
-        parseInt(useNameAPISTYLE.height) +
-        25 +
-        "px";
-    */
+
     nameAPIOutputERR.style.top = parseInt(yourNameSTYLE.top) + 90 + "px";
-
-    console.log(
-        parseInt(yourNameSTYLE.top), parseInt(yourNameSTYLE.height), parseInt(nameAPIOutputERRSTYLE.top)
-    )
 }
-
-
 
 var refresh = setInterval(function () {
     alignAPIPage();
