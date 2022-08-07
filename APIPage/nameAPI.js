@@ -9,7 +9,7 @@ useNameAPI.addEventListener("click", () => {
     nameAPIOutputERR.style.display = "none";
 });
 
-yourName.addEventListener("keydown", function(event) {
+yourName.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         if (yourName.value == "") {
             nameAPIOutput.style.display = "none";
@@ -22,7 +22,7 @@ yourName.addEventListener("keydown", function(event) {
     }
 });
 
-let regionNames = new Intl.DisplayNames(['en'], {type: 'region'});
+let regionNames = new Intl.DisplayNames(["en"], { type: "region" });
 
 function callAPIs() {
     var name = yourName.value;
@@ -35,12 +35,32 @@ function callAPIs() {
     const gender = document.getElementById("gender");
     const nationality = document.getElementById("nationality");
 
+    const ageTransition1 = document.getElementById(ageTransition1);
+    const genderTransition1 = document.getElementById(genderTransition1);
+    const nationalityTransition1 = document.getElementById(
+        nationalityTransition1
+    );
+
+    const ageTransition2 = document.getElementById(ageTransition2);
+    const genderTransition2 = document.getElementById(genderTransition2);
+    const nationalityTransition2 = document.getElementById(
+        nationalityTransition2
+    );
+
     fetch(ageUrl)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
-            age.textContent = data.age + " year old,";
+            if (data.age == "") {
+                ageTransition1.textContent = "";
+            }
+
+            if (data.age != ""){
+                ageTransition1.textContent = " a ";
+                ageTransition2.textContent = " year old ";
+            }
+            age.textContent = data.age;
         })
         .catch((error) => {
             console.log(error);
@@ -51,6 +71,13 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
+            if (data.gender == "") {
+                genderTransition1.textContent = "";
+            }
+
+            if (data.gender != ""){
+                genderTransition1.textContent = " a ";
+            }
             gender.textContent = data.gender;
         })
         .catch((error) => {
@@ -62,7 +89,16 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            nationality.textContent = "from " + String(regionNames.of(data.country[0].country_id)) + ".";
+
+            if (data.country == ""){
+                nationalityTransition1.textContent = "";
+            }
+
+            if (data.country != ""){
+                nationalityTransition1.textContent = " from ";
+            }
+            nationality.textContent =
+                regionNames.of(data.country[0].country_id) + ".";
         })
         .catch((error) => {
             console.log(error);
