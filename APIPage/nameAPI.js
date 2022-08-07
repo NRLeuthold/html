@@ -35,16 +35,16 @@ function callAPIs() {
     const gender = document.getElementById("gender");
     const nationality = document.getElementById("nationality");
 
-    const ageTransition1 = document.getElementById(ageTransition1);
-    const genderTransition1 = document.getElementById(genderTransition1);
+    const ageTransition1 = document.getElementById("ageTransition1");
+    const genderTransition1 = document.getElementById("genderTransition1");
     const nationalityTransition1 = document.getElementById(
-        nationalityTransition1
+        "nationalityTransition1"
     );
 
-    const ageTransition2 = document.getElementById(ageTransition2);
-    const genderTransition2 = document.getElementById(genderTransition2);
+    const ageTransition2 = document.getElementById("ageTransition2");
+    const genderTransition2 = document.getElementById("genderTransition2");
     const nationalityTransition2 = document.getElementById(
-        nationalityTransition2
+        "nationalityTransition2"
     );
 
     fetch(ageUrl)
