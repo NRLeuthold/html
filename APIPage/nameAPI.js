@@ -79,7 +79,9 @@ function callAPIs() {
             }
 
             if (data.gender != ""){
-                genderTransition1.textContent = " a ";
+                if (age.textContent == ""){
+                    genderTransition1.textContent = " a ";
+                }
             }
             gender.textContent = data.gender;
         })
