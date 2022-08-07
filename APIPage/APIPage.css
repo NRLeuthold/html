@@ -76,3 +76,12 @@
 
     display: none;
 }
+
+#horizontal1 {
+    position: absolute;
+    width: 85%;
+    height: 2px;
+    left: 7.5%;
+
+    background-color: rgb(169, 169, 169);
+}

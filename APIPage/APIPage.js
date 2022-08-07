@@ -1,6 +1,9 @@
 const content = document.getElementById("content");
 var contentSTYLE = getComputedStyle(content);
 
+const horizontal1 = document.getElementById("horizontal1");
+var horizontal1STYLE = getComputedStyle(horizontal1);
+
 ///////////////////////////////////////////////////////////////////
 
 const nameAPI = document.getElementById("nameAPI");
@@ -21,11 +24,14 @@ var nameAPIOutputSTYLE = getComputedStyle(nameAPIOutput);
 const nameAPIOutputERR = document.getElementById("nameAPIOutputERR");
 var nameAPIOutputERRSTYLE = getComputedStyle(nameAPIOutputERR);
 
+///////////////////////////////////////////////////////////////////
 function alignAPIPage() {
     content.style.left =
         parseFloat(menuSTYLE.left) + parseFloat(menuSTYLE.width) + "px";
     content.style.width =
         window.innerWidth - parseFloat(contentSTYLE.left) + "px";
+
+    horizontal1.style.top = parseInt(nameAPIOutputSTYLE.bottom) + "20" + "px";
 
     ////////////////////////////////////////////////////////////////////
 
