@@ -42,17 +42,13 @@ function callAPIs() {
     );
 
     const ageTransition2 = document.getElementById("ageTransition2");
-    const genderTransition2 = document.getElementById("genderTransition2");
-    const nationalityTransition2 = document.getElementById(
-        "nationalityTransition2"
-    );
+
 
     fetch(ageUrl)
         .then((response) => {
             return response.json();
         })
         .then((data) => {
-            console.log(typeof(data.age));
             if (data.age == "") {
                 ageTransition1.textContent = "";
             }
@@ -72,8 +68,6 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            console.log(typeof(data.country));
-
             if (data.gender == "") {
                 genderTransition1.textContent = "";
             }
@@ -94,9 +88,6 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            console.log(typeof(data.country));
-
-
             if (data.country == ""){
                 nationalityTransition1.textContent = "";
             }

@@ -57,6 +57,7 @@
 #nameAPIOutput {
     position: absolute;
 
+    text-align: center;
     font-weight: bold;
     font-size: 18px;
     font-family: 'Courier New', Courier, monospace;
