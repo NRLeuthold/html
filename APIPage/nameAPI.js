@@ -40,7 +40,7 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            age.textContent = data.age;
+            age.textContent = data.age + " year old,";
         })
         .catch((error) => {
             console.log(error);
@@ -62,7 +62,7 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            nationality.textContent = regionNames.of(data.country[0].country_id) + ".";
+            nationality.textContent = " from " + regionNames.of(data.country[0].country_id) + ".";
         })
         .catch((error) => {
             console.log(error);
