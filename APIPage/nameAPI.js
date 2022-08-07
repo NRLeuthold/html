@@ -52,6 +52,7 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
+            console.log(typeof(data.age));
             if (data.age == "") {
                 ageTransition1.textContent = "";
             }
@@ -71,6 +72,8 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
+            console.log(typeof(data.country));
+
             if (data.gender == "") {
                 genderTransition1.textContent = "";
             }
@@ -89,6 +92,8 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
+            console.log(typeof(data.country));
+
 
             if (data.country == ""){
                 nationalityTransition1.textContent = "";
