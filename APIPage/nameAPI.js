@@ -62,7 +62,7 @@ function callAPIs() {
             return response.json();
         })
         .then((data) => {
-            nationality.textContent = "from " + regionNames.of(data.country[0].country_id) + ".";
+            nationality.textContent = "from " + String(regionNames.of(data.country[0].country_id)) + ".";
         })
         .catch((error) => {
             console.log(error);
