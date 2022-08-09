@@ -31,7 +31,7 @@ function alignAPIPage() {
     content.style.width =
         window.innerWidth - parseFloat(contentSTYLE.left) + "px";
 
-    horizontal1.style.top = parseInt(nameAPIOutputSTYLE.) + 10 + "px";
+    horizontal1.style.top = parseInt(nameAPIOutputSTYLE.bottom) + 10 + "px";
 
     ////////////////////////////////////////////////////////////////////
 
